@@ -12,7 +12,7 @@ and internal conflict._
 
 - [**"Social Media and Labor Market outcomes. An analysis of Facebook effect on college graduates earnings
 "**](/blog/kindle-to-notion/), with Luca Marcianò (2025)  
-  _This paper examines the impact of usage of social media on collage graduates income._  
+  _This paper examines the impact of usage of social media on college graduates income._  
    <a class="button" style = "box-shadow: none" href="/research/social/social_writeup.pdf">PDF</a> <a class="button" href="/research/social/social_slides.pdf">Slides</a>
 ---
 
