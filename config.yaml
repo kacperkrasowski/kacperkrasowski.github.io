@@ -44,7 +44,7 @@ params:
 
   # for enchanced SEO
   env: production
-
+  publishDir: "public"
   # Home Page
   profileMode:
     enabled: true
