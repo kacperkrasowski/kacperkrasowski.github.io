@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Frontend Development on Kacper Krasowski</title>
-    <link>https://kacperkrasowski.github.io/tags/frontend-development.html</link>
+    <link>https://kacperkrasowski.github.io/tags/frontend-development/</link>
     <description>Recent content in Frontend Development on Kacper Krasowski</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://kacperkrasowski.github.io/tags/frontend-development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Todo List App</title>
-      <link>https://kacperkrasowski.github.io/projects/todo-list-app.html</link>
+      <link>https://kacperkrasowski.github.io/projects/todo-list-app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kacperkrasowski.github.io/projects/todo-list-app.html</guid>
+      <guid>https://kacperkrasowski.github.io/projects/todo-list-app/</guid>
       <description>A Todo list web application built using React</description>
     </item>
     

@@ -8,199 +8,199 @@
     <language>en-us</language><atom:link href="https://kacperkrasowski.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>I passed the AWS DVA Certification Exam</title>
-      <link>https://kacperkrasowski.github.io/blog/aws-dva-certification.html</link>
+      <link>https://kacperkrasowski.github.io/blog/aws-dva-certification/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kacperkrasowski.github.io/blog/aws-dva-certification.html</guid>
+      <guid>https://kacperkrasowski.github.io/blog/aws-dva-certification/</guid>
       <description>How I passed the AWS Developer - Associate Certification Exam (DVA-C02)</description>
     </item>
     
     <item>
       <title>I passed the AWS SAA Certification Exam</title>
-      <link>https://kacperkrasowski.github.io/blog/aws-saa-certification.html</link>
+      <link>https://kacperkrasowski.github.io/blog/aws-saa-certification/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kacperkrasowski.github.io/blog/aws-saa-certification.html</guid>
+      <guid>https://kacperkrasowski.github.io/blog/aws-saa-certification/</guid>
       <description>How I passed the AWS Solutions Architect-Associate Certification Exam</description>
     </item>
     
     <item>
       <title>Kindle to Notion</title>
-      <link>https://kacperkrasowski.github.io/blog/kindle-to-notion.html</link>
+      <link>https://kacperkrasowski.github.io/blog/kindle-to-notion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kacperkrasowski.github.io/blog/kindle-to-notion.html</guid>
+      <guid>https://kacperkrasowski.github.io/blog/kindle-to-notion/</guid>
       <description>A way to seamlessly transfer your Kindle highlights to Notion Database!</description>
     </item>
     
     <item>
       <title>Face Landmarks Detection using CNN</title>
-      <link>https://kacperkrasowski.github.io/blog/face-landmarks-detection.html</link>
+      <link>https://kacperkrasowski.github.io/blog/face-landmarks-detection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kacperkrasowski.github.io/blog/face-landmarks-detection.html</guid>
+      <guid>https://kacperkrasowski.github.io/blog/face-landmarks-detection/</guid>
       <description>Can computers really understand the human face?</description>
     </item>
     
     <item>
       <title>Machine Learning - Visualized</title>
-      <link>https://kacperkrasowski.github.io/blog/machine-learning-visualized.html</link>
+      <link>https://kacperkrasowski.github.io/blog/machine-learning-visualized/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kacperkrasowski.github.io/blog/machine-learning-visualized.html</guid>
+      <guid>https://kacperkrasowski.github.io/blog/machine-learning-visualized/</guid>
       <description>A visual approach to understand machine learning</description>
     </item>
     
     <item>
       <title>Face Dataset Compression using PCA</title>
-      <link>https://kacperkrasowski.github.io/blog/face-dataset-compression.html</link>
+      <link>https://kacperkrasowski.github.io/blog/face-dataset-compression/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kacperkrasowski.github.io/blog/face-dataset-compression.html</guid>
+      <guid>https://kacperkrasowski.github.io/blog/face-dataset-compression/</guid>
       <description>Principal Component Analysis for Image Dataset Compression</description>
     </item>
     
     <item>
       <title>Principal Component Analysis - Visualized</title>
-      <link>https://kacperkrasowski.github.io/blog/pca-visualized.html</link>
+      <link>https://kacperkrasowski.github.io/blog/pca-visualized/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kacperkrasowski.github.io/blog/pca-visualized.html</guid>
+      <guid>https://kacperkrasowski.github.io/blog/pca-visualized/</guid>
       <description>Data compression using Principal Component Analysis (PCA)</description>
     </item>
     
     <item>
       <title>Obsidian Publish using GitHub Action</title>
-      <link>https://kacperkrasowski.github.io/projects/obsidian-publish-github-action.html</link>
+      <link>https://kacperkrasowski.github.io/projects/obsidian-publish-github-action/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kacperkrasowski.github.io/projects/obsidian-publish-github-action.html</guid>
+      <guid>https://kacperkrasowski.github.io/projects/obsidian-publish-github-action/</guid>
       <description>A custom GitHub Action to publish Obsidian notes as a website</description>
     </item>
     
     <item>
       <title>Kindle to Notion</title>
-      <link>https://kacperkrasowski.github.io/projects/kindle-to-notion.html</link>
+      <link>https://kacperkrasowski.github.io/projects/kindle-to-notion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kacperkrasowski.github.io/projects/kindle-to-notion.html</guid>
+      <guid>https://kacperkrasowski.github.io/projects/kindle-to-notion/</guid>
       <description>A way to seamlessly transfer your Kindle highlights to Notion Database!</description>
     </item>
     
     <item>
       <title>Automated Image Captioning (Bachelor Thesis)</title>
-      <link>https://kacperkrasowski.github.io/projects/automated-image-captioning.html</link>
+      <link>https://kacperkrasowski.github.io/projects/automated-image-captioning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kacperkrasowski.github.io/projects/automated-image-captioning.html</guid>
+      <guid>https://kacperkrasowski.github.io/projects/automated-image-captioning/</guid>
       <description>Can computers summarize the contents of an image?</description>
     </item>
     
     <item>
       <title>Todo List App</title>
-      <link>https://kacperkrasowski.github.io/projects/todo-list-app.html</link>
+      <link>https://kacperkrasowski.github.io/projects/todo-list-app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kacperkrasowski.github.io/projects/todo-list-app.html</guid>
+      <guid>https://kacperkrasowski.github.io/projects/todo-list-app/</guid>
       <description>A Todo list web application built using React</description>
     </item>
     
     <item>
       <title>Face Landmarks Detection using CNN</title>
-      <link>https://kacperkrasowski.github.io/projects/face-landmarks-detection.html</link>
+      <link>https://kacperkrasowski.github.io/projects/face-landmarks-detection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kacperkrasowski.github.io/projects/face-landmarks-detection.html</guid>
+      <guid>https://kacperkrasowski.github.io/projects/face-landmarks-detection/</guid>
       <description>Can computers really understand the human face?</description>
     </item>
     
     <item>
       <title>Gaze-tracking Goggles</title>
-      <link>https://kacperkrasowski.github.io/projects/gaze-tracking-goggles.html</link>
+      <link>https://kacperkrasowski.github.io/projects/gaze-tracking-goggles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kacperkrasowski.github.io/projects/gaze-tracking-goggles.html</guid>
+      <guid>https://kacperkrasowski.github.io/projects/gaze-tracking-goggles/</guid>
       <description>Smart Goggles for Gaze Analysis</description>
     </item>
     
     <item>
       <title>OpenQuad</title>
-      <link>https://kacperkrasowski.github.io/projects/openquad.html</link>
+      <link>https://kacperkrasowski.github.io/projects/openquad/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kacperkrasowski.github.io/projects/openquad.html</guid>
+      <guid>https://kacperkrasowski.github.io/projects/openquad/</guid>
       <description>Open-souce platform for drone automation</description>
     </item>
     
     <item>
       <title>Search and Reconnaissance Robot</title>
-      <link>https://kacperkrasowski.github.io/projects/search-and-reconnaissance-robot.html</link>
+      <link>https://kacperkrasowski.github.io/projects/search-and-reconnaissance-robot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kacperkrasowski.github.io/projects/search-and-reconnaissance-robot.html</guid>
+      <guid>https://kacperkrasowski.github.io/projects/search-and-reconnaissance-robot/</guid>
       <description>An all-terrain robot for disaster management!</description>
     </item>
     
     <item>
       <title>SEBART-Pro</title>
-      <link>https://kacperkrasowski.github.io/projects/sebart-pro.html</link>
+      <link>https://kacperkrasowski.github.io/projects/sebart-pro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kacperkrasowski.github.io/projects/sebart-pro.html</guid>
+      <guid>https://kacperkrasowski.github.io/projects/sebart-pro/</guid>
       <description>A smart self-balancing robot!</description>
     </item>
     
     <item>
       <title>Software Developer II (Backend Infrastructure)</title>
-      <link>https://kacperkrasowski.github.io/experience/clio.html</link>
+      <link>https://kacperkrasowski.github.io/experience/clio/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kacperkrasowski.github.io/experience/clio.html</guid>
+      <guid>https://kacperkrasowski.github.io/experience/clio/</guid>
       <description>Clio | Toronto, Canada</description>
     </item>
     
     <item>
       <title>Software Engineer (LLM &amp; Backend Infrastructure)</title>
-      <link>https://kacperkrasowski.github.io/experience/16bit.html</link>
+      <link>https://kacperkrasowski.github.io/experience/16bit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kacperkrasowski.github.io/experience/16bit.html</guid>
+      <guid>https://kacperkrasowski.github.io/experience/16bit/</guid>
       <description>16Bit | Toronto, Canada</description>
     </item>
     
     <item>
       <title>Backend Engineer</title>
-      <link>https://kacperkrasowski.github.io/experience/buyerassist.html</link>
+      <link>https://kacperkrasowski.github.io/experience/buyerassist/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kacperkrasowski.github.io/experience/buyerassist.html</guid>
+      <guid>https://kacperkrasowski.github.io/experience/buyerassist/</guid>
       <description>BuyerAssist (India)</description>
     </item>
     
     <item>
       <title>Remote Research Intern</title>
-      <link>https://kacperkrasowski.github.io/experience/tumunich.html</link>
+      <link>https://kacperkrasowski.github.io/experience/tumunich/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kacperkrasowski.github.io/experience/tumunich.html</guid>
+      <guid>https://kacperkrasowski.github.io/experience/tumunich/</guid>
       <description>Technical University of Munich (Germany)</description>
     </item>
     
     <item>
       <title>Software Intern</title>
-      <link>https://kacperkrasowski.github.io/experience/origin-health.html</link>
+      <link>https://kacperkrasowski.github.io/experience/origin-health/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kacperkrasowski.github.io/experience/origin-health.html</guid>
+      <guid>https://kacperkrasowski.github.io/experience/origin-health/</guid>
       <description>OriginHealth (Singapore)</description>
     </item>
     
     <item>
       <title>Computer Vision Intern</title>
-      <link>https://kacperkrasowski.github.io/experience/iit-madras.html</link>
+      <link>https://kacperkrasowski.github.io/experience/iit-madras/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kacperkrasowski.github.io/experience/iit-madras.html</guid>
+      <guid>https://kacperkrasowski.github.io/experience/iit-madras/</guid>
       <description>IIT Madras (India)</description>
     </item>
     

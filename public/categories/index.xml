@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on Kacper Krasowski</title>
-    <link>https://kacperkrasowski.github.io/categories.html</link>
+    <link>https://kacperkrasowski.github.io/categories/</link>
     <description>Recent content in Categories on Kacper Krasowski</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://kacperkrasowski.github.io/categories/index.xml" rel="self" type="application/rss+xml" />

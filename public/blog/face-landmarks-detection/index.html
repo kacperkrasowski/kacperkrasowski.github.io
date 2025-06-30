@@ -10,8 +10,8 @@
 <meta name="description" content="Can computers really understand the human face?">
 <meta name="author" content="">
 <link rel="canonical" href="https://kacperkrasowski.github.io/blog/face-landmarks-detection/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.be1338390633551ab2bf5e0db22abcc23fd43eefacf17a08fddc6742a271d6b5.css" integrity="sha256-vhM4OQYzVRqyv14Nsiq8wj/UPu&#43;s8XoI/dxnQqJx1rU=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.min.555af97124d54bb1457985dd081b8f5616a48103aafeb30ac89fde835d65aa6c.js" integrity="sha256-VVr5cSTVS7FFeYXdCBuPVhakgQOq/rMKyJ/eg11lqmw="
+<link crossorigin="anonymous" href="https://kacperkrasowski.github.io/assets/css/stylesheet.min.be1338390633551ab2bf5e0db22abcc23fd43eefacf17a08fddc6742a271d6b5.css" integrity="sha256-vhM4OQYzVRqyv14Nsiq8wj/UPu&#43;s8XoI/dxnQqJx1rU=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="https://kacperkrasowski.github.io/assets/js/highlight.min.555af97124d54bb1457985dd081b8f5616a48103aafeb30ac89fde835d65aa6c.js" integrity="sha256-VVr5cSTVS7FFeYXdCBuPVhakgQOq/rMKyJ/eg11lqmw="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://kacperkrasowski.github.io/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://kacperkrasowski.github.io/favicon-16x16.png">
@@ -254,7 +254,7 @@ May 2020
 </span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">!</span>tar <span style="color:#f92672">-</span>xvzf <span style="color:#e6db74">&#39;ibug_300W_large_face_landmark_dataset.tar.gz&#39;</span>    
 </span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">!</span>rm <span style="color:#f92672">-</span>r <span style="color:#e6db74">&#39;ibug_300W_large_face_landmark_dataset.tar.gz&#39;</span>
 </span></span></code></pre></div><p>Here is a sample image from the dataset. We can see that the face occupies a very small fraction of the entire image. If we feed the full image to the neural network, it will also process the background (irrelevant information), making it difficult for the model to learn. Therefore, we need to crop the image and feed only the face portion.</p>
-<p><img loading="lazy" src="/blog/face-landmarks-detection/img1.jpg" alt="Sample Image and Landmarks from the Dataset"  />
+<p><img loading="lazy" src="https://kacperkrasowski.github.io/blog/face-landmarks-detection/img1.jpg" alt="Sample Image and Landmarks from the Dataset"  />
 </p>
 <h2 id="data-preprocessing">Data Preprocessing<a hidden class="anchor" aria-hidden="true" href="#data-preprocessing">#</a></h2>
 <p>To prevent the neural network from overfitting the training dataset, we need to randomly transform the dataset. We will apply the following operations to the training and validation dataset:</p>
@@ -367,7 +367,7 @@ May 2020
 </span></span><span style="display:flex;"><span>dataset <span style="color:#f92672">=</span> FaceLandmarksDataset(Transforms())
 </span></span></code></pre></div><p><strong>Note:</strong> <code>landmarks = landmarks - 0.5</code> is done to zero-centre the landmarks as zero-centred outputs are easier for the neural network to learn.</p>
 <p>The output of the dataset after preprocessing will look something like this (landmarks have been plotted on the image).</p>
-<p><img loading="lazy" src="/blog/face-landmarks-detection/img2.jpg" alt="Preprocessed Data Sample"  />
+<p><img loading="lazy" src="https://kacperkrasowski.github.io/blog/face-landmarks-detection/img2.jpg" alt="Preprocessed Data Sample"  />
 </p>
 <h1 id="neural-network">Neural Network<a hidden class="anchor" aria-hidden="true" href="#neural-network">#</a></h1>
 <p>We will use the ResNet18 as the basic framework. We need to modify the first and last layers to suit our purpose. In the first layer, we will make the input channel count as 1 for the neural network to accept grayscale images. Similarly, in the final layer, the output channel count should equal <strong>68 * 2 = 136</strong> for the model to predict the (x, y) coordinates of the 68 landmarks for each face.</p>
@@ -529,16 +529,16 @@ May 2020
 </span></span></code></pre></div><blockquote>
 <p>⚠️ The above code snippet will not work in Colab Notebook as some functionality of the OpenCV is not supported in Colab yet. To run the above cell, use your local machine.</p></blockquote>
 <p><strong>OpenCV Harr Cascade Classifier</strong> is used to detect faces in an image. Object detection using Haar Cascades is a machine learning-based approach where a cascade function is trained with a set of input data. OpenCV already contains many pre-trained classifiers for face, eyes, pedestrians, and many more. In our case, we will be using the face classifier for which you need to download the pre-trained classifier XML file and save it to your working directory.</p>
-<p><img loading="lazy" src="/blog/face-landmarks-detection/img3.jpg" alt="Face Detection"  />
+<p><img loading="lazy" src="https://kacperkrasowski.github.io/blog/face-landmarks-detection/img3.jpg" alt="Face Detection"  />
 </p>
 <p>Detected faces in the input image are then cropped, resized to <strong>(224, 224)</strong> and fed to our trained neural network to predict landmarks in them.</p>
-<p><img loading="lazy" src="/blog/face-landmarks-detection/img4.jpg" alt="Landmarks Detection on the Cropped Face "  />
+<p><img loading="lazy" src="https://kacperkrasowski.github.io/blog/face-landmarks-detection/img4.jpg" alt="Landmarks Detection on the Cropped Face "  />
 </p>
 <p>The predicted landmarks in the cropped faces are then overlayed on top of the original image. The result is the image shown below. Pretty impressive, right!</p>
-<p><img loading="lazy" src="/blog/face-landmarks-detection/cover.jpg" alt="Final Result"  />
+<p><img loading="lazy" src="https://kacperkrasowski.github.io/blog/face-landmarks-detection/cover.jpg" alt="Final Result"  />
 </p>
 <p>Similarly, landmarks detection on multiple faces:</p>
-<p><img loading="lazy" src="/blog/face-landmarks-detection/img5.jpg" alt="Detection on multiple faces"  />
+<p><img loading="lazy" src="https://kacperkrasowski.github.io/blog/face-landmarks-detection/img5.jpg" alt="Detection on multiple faces"  />
 </p>
 <p>Here, you can see that the OpenCV Harr Cascade Classifier has detected multiple faces including a false positive (a fist is predicted as a face). So, the network has plotted some landmarks on that.</p>
 <h1 id="thats-all-folks">That’s all folks!<a hidden class="anchor" aria-hidden="true" href="#thats-all-folks">#</a></h1>

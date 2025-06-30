@@ -1,6 +1,7 @@
 baseURL: "https://kacperkrasowski.github.io/"
 canonifyURLs: true
-relativeURLs: true
+relativeURLs: false
+uglyURLs: false
 languageCode: en-us
 title: Kacper Krasowski
 theme: PaperMod

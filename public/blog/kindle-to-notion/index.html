@@ -10,8 +10,8 @@
 <meta name="description" content="A way to seamlessly transfer your Kindle highlights to Notion Database!">
 <meta name="author" content="">
 <link rel="canonical" href="https://kacperkrasowski.github.io/blog/kindle-to-notion/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.be1338390633551ab2bf5e0db22abcc23fd43eefacf17a08fddc6742a271d6b5.css" integrity="sha256-vhM4OQYzVRqyv14Nsiq8wj/UPu&#43;s8XoI/dxnQqJx1rU=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.min.555af97124d54bb1457985dd081b8f5616a48103aafeb30ac89fde835d65aa6c.js" integrity="sha256-VVr5cSTVS7FFeYXdCBuPVhakgQOq/rMKyJ/eg11lqmw="
+<link crossorigin="anonymous" href="https://kacperkrasowski.github.io/assets/css/stylesheet.min.be1338390633551ab2bf5e0db22abcc23fd43eefacf17a08fddc6742a271d6b5.css" integrity="sha256-vhM4OQYzVRqyv14Nsiq8wj/UPu&#43;s8XoI/dxnQqJx1rU=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="https://kacperkrasowski.github.io/assets/js/highlight.min.555af97124d54bb1457985dd081b8f5616a48103aafeb30ac89fde835d65aa6c.js" integrity="sha256-VVr5cSTVS7FFeYXdCBuPVhakgQOq/rMKyJ/eg11lqmw="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://kacperkrasowski.github.io/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://kacperkrasowski.github.io/favicon-16x16.png">
@@ -239,10 +239,10 @@ Dec 2021
 
   <div class="post-content"><h1 id="-intro">✏️ Intro<a hidden class="anchor" aria-hidden="true" href="#-intro">#</a></h1>
 <p>If you’re like me who loves reading books on Kindle, you might have wondered how you could extract your highlights in an organized way and save them as notes. At least I did. You see, I use Notion as my primary note-taking/productivity management app and I already have a database of all the books that I have read so far and also the ones that I am planning to read next.</p>
-<p><img loading="lazy" src="/blog/kindle-to-notion/img1.jpg" alt="My Notion Books Database"  />
+<p><img loading="lazy" src="https://kacperkrasowski.github.io/blog/kindle-to-notion/img1.jpg" alt="My Notion Books Database"  />
 </p>
 <p>And since each of these book entries in the Notion database is a page in itself, I thought why not populate them with the highlights that I made in Kindle while reading them. The only problem was Kindle stores all of the highlights in a text file (My Clippings.txt) which as you can see contains a tonne of useless information like the book location, where the highlight was made, and when it was made.</p>
-<p><img loading="lazy" src="/blog/kindle-to-notion/img2.jpg" alt="My Clippings.txt"  />
+<p><img loading="lazy" src="https://kacperkrasowski.github.io/blog/kindle-to-notion/img2.jpg" alt="My Clippings.txt"  />
 </p>
 <p>I needed to find a way to filter out the highlights, group them by the book title and send them to my Notion book database. Not only that, all of this should happen automatically with minimal human effort. So, over the past two weekends, I spent the majority of my time coding and I’m finally ready with an app that would allow readers to seamlessly transfer all of their highlights to Notion. Let’s take a look&hellip;</p>
 <h1 id="-node-environment">🤖 Node Environment<a hidden class="anchor" aria-hidden="true" href="#-node-environment">#</a></h1>
@@ -271,12 +271,12 @@ npm install
 <p>Get your Notion API key at the <a href="https://www.notion.so/my-integrations">Notion Integrations</a> page and create a new internal integration. Integrations allow us to access a portion of our Notion workspace using a secret token called the <strong>Notion API key (Internal Integration Token)</strong>.</p>
 </li>
 </ul>
-<p><img loading="lazy" src="/blog/kindle-to-notion/img3.jpg" alt="My Notion Books Database"  />
+<p><img loading="lazy" src="https://kacperkrasowski.github.io/blog/kindle-to-notion/img3.jpg" alt="My Notion Books Database"  />
 </p>
 <ul>
 <li>Go to your Notion dashboard. Navigate to the Books database. Click on Share in the top right-hand corner and invite the integration you just created. This will allow the integration to edit the <strong>Books</strong> database using the Notion API key that we got in the previous step.</li>
 </ul>
-<p><img loading="lazy" src="/blog/kindle-to-notion/img4.jpg" alt="My Notion Books Database"  />
+<p><img loading="lazy" src="https://kacperkrasowski.github.io/blog/kindle-to-notion/img4.jpg" alt="My Notion Books Database"  />
 </p>
 <ul>
 <li>Copy the link to the Notion <strong>Books</strong> database and extract the Database Id as shown below. The database id is nothing but all of the gibberish between the last <code>/</code> and the <code>?</code>. This is required by the app to perform <strong>CRUD operations</strong> on this database.</li>
