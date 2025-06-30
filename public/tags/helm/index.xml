@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Helm on Kacper Krasowski</title>
-    <link>https://kacperkrasowski.github.io/tags/helm/</link>
+    <link>https://kacperkrasowski.github.io/tags/helm.html</link>
     <description>Recent content in Helm on Kacper Krasowski</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://kacperkrasowski.github.io/tags/helm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Software Engineer (LLM &amp; Backend Infrastructure)</title>
-      <link>https://kacperkrasowski.github.io/experience/16bit/</link>
+      <link>https://kacperkrasowski.github.io/experience/16bit.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kacperkrasowski.github.io/experience/16bit/</guid>
+      <guid>https://kacperkrasowski.github.io/experience/16bit.html</guid>
       <description>16Bit | Toronto, Canada</description>
     </item>
     
