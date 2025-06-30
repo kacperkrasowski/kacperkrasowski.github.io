@@ -8,21 +8,12 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: 'latest'
-
-      - name: Build site
-        run: hugo --minify
-
-      - name: Deploy to main branch (overwrite with public/)
-        uses: peaceiris/actions-gh-pages@v3
+      - uses: actions/checkout@v3
+      - uses: peaceiris/actions-hugo@v2
+        with: hugo-version: 'latest'
+      - run: hugo
+      - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
