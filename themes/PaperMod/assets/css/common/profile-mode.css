@@ -1,0 +1,61 @@
+.buttons,
+.main .profile {
+    display: flex;
+    justify-content: center;
+}
+
+.main .profile {
+    align-items: center;
+    min-height: calc(100vh - var(--header-height) - var(--footer-height) - (var(--gap) * 2));
+    text-align: center;
+}
+
+.profile .profile_inner h1 {
+    padding: 12px 0;
+}
+
+.profile img {
+    display: inline-table;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.buttons {
+    flex-wrap: wrap;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.button {
+    border: 2px solid var(--button-color);
+    border-radius: 7px ;
+    margin: 0px;
+    padding: 1.5px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    text-decoration: none !important;
+    color: inherit;
+}
+
+
+
+.button-inner {
+    padding: 0 6px;
+}
+
+.button:active {
+    transform: scale(0.96);
+}
+
+.button:hover {
+  background-color: var(--button-color);
+  filter: brightness(1.2);
+}
+a {
+  transition: filter 0.5s ease;
+}
+
+a:hover {
+  filter: brightness(4);
+}
+
+

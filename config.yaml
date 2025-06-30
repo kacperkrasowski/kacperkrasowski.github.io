@@ -1,0 +1,108 @@
+baseURL: "https://arkalim.netlify.app"
+languageCode: en-us
+title: Kacper Krasowski
+theme: PaperMod
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: research
+      name: Research
+      url: /research
+      weight: 20
+    - identifier: teaching
+      name: Teaching
+      url: /teaching
+      weight: 30
+    - identifier: random
+      name: Random
+      url: /random
+      weight: 40
+    - identifier: search
+      name: Search
+      url: /search
+      weight: 50
+    # - identifier: tags
+    #   name: Tags
+    #   url: /tags
+    #   weight: 60
+    # - identifier: notes
+    #   name: Notes
+    #   url: https://notes.arkalim.org
+    #   weight: 70
+
+params:
+
+  showToc: true
+  TocOpen: false
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  hideMeta: false
+
+  # for enchanced SEO
+  env: production
+
+  # Home Page
+  profileMode:
+    enabled: true
+    title: "Kacper Krasowski"
+    subtitle: |
+      <span style="color:gray;"><i>PhD student</i></span><br><br>
+      Hi, I am a PhD student in [**Collegio Carlo Alberto**](https://www.carloalberto.org/) and  [**Universitat Autònoma de Barcelona**](https://www.uab.cat/web/universitat-autonoma-de-barcelona-1345467950436.html). My research explores how social media shapes political behavior and labor market outcomes, using empirical and computational methods.
+      
+      My interests include 💡**social media**, 💡**networks**, and 💡**computer science**.
+
+      I hold an 🎓**MRes in Economics from _UAB_** (2024) and am currently pursuing a 🎓**PhD in Economics at _CCA_ and _UAB_**.
+
+
+ 
+    imageUrl: "home/web.jpg"
+    imageWidth: 320
+    imageHeight: 370
+    # buttons:
+    #   - name: Resume
+    #     url: ""
+
+  # List View
+  hideDescriptionInList: false
+
+  # cover image for posts
+  cover:
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+  socialIcons:
+    - name: "email"
+      url: "mailto:kacper.krasowki@carloalberto.org"
+    - name: "github"
+      url: "https://github.com/kacperkrasowski"
+    - name: "x"
+      url: "https://x.com/kacperkrasov"
+    - name: "bluesky"
+      url: "https://bsky.app/profile/kacperkr.bsky.social"
+
+  # text search
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+# for search using Fuse.js
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+# allow HTML in MD
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
