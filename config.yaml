@@ -38,11 +38,15 @@ menu:
     #   weight: 70
 
 params:
-
+  keywords: ["economics", "PhD", "research", "Kacper Krasowski", "Social Media", "CCA", "UniTo", "UAB"]
+  author: "Kacper Krasowski"
   showToc: true
   TocOpen: false
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
   hideMeta: false
 
   # for enchanced SEO
