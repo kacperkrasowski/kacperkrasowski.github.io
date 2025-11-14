@@ -20,10 +20,6 @@ menu:
       name: Teaching
       url: /teaching
       weight: 30
-    - identifier: CV
-      name: CV
-      url: /cv/CV.pdf
-      weight: 40
     #- identifier: random
     #  name: Random
     #  url: /random
