@@ -22,7 +22,7 @@ menu:
       weight: 30
     - identifier: CV
       name: CV
-      url: /cv/cv.pdf
+      url: /cv/CV.pdf
       weight: 40
     #- identifier: random
     #  name: Random
@@ -63,7 +63,7 @@ params:
     subtitle: |
       <span style="color:gray;"><i>PhD student & RESTud's Social Media Manager</i></span><br><br>
       Hi, I am a PhD student at [**_Collegio Carlo Alberto_**](https://www.carloalberto.org/) and  [**_Universitat Autònoma de Barcelona_**](https://www.uab.cat/web/universitat-autonoma-de-barcelona-1345467950436.html). My research focuses on how **digital technologies**, such as **social media** algorithms and **AI**.
-      Check my [cv](/cv/cv.pdf)
+      Check my [CV](/cv/CV.pdf)
 
  
     imageUrl: "home/web.jpg"
