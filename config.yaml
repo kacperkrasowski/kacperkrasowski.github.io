@@ -20,14 +20,18 @@ menu:
       name: Teaching
       url: /teaching
       weight: 30
-    - identifier: random
-      name: Random
-      url: /random
+    - identifier: CV
+      name: CV
+      url: /cv/CV.pdf
       weight: 40
-    - identifier: search
-      name: Search
-      url: /search
-      weight: 50
+    #- identifier: random
+    #  name: Random
+    #  url: /random
+    #  weight: 40
+    #- identifier: search
+    #  name: Search
+    #  url: /search
+    #  weight: 50
     # - identifier: tags
     #   name: Tags
     #   url: /tags
@@ -38,7 +42,7 @@ menu:
     #   weight: 70
 
 params:
-  keywords: ["economics", "PhD", "research", "Kacper Krasowski", "Social Media", "CCA", "UniTo", "UAB"]
+  keywords: ["economics", "PhD", "research", "Kacper Krasowski", "Social Media", "CCA", "UniTo", "UAB", "AI", "Digital", ]
   author: "Kacper Krasowski"
   showToc: true
   TocOpen: false
@@ -57,18 +61,14 @@ params:
     enabled: true
     title: "Kacper Krasowski"
     subtitle: |
-      <span style="color:gray;"><i>PhD student</i></span><br><br>
-      Hi, I am a PhD student in [**Collegio Carlo Alberto**](https://www.carloalberto.org/) and  [**Universitat Autònoma de Barcelona**](https://www.uab.cat/web/universitat-autonoma-de-barcelona-1345467950436.html). My research explores how social media shapes political behavior and labor market outcomes, using empirical and computational methods.
-      
-      My interests include 💡**social media**, 💡**networks**, and 💡**computer science**.
-
-      I hold an 🎓**MRes in Economics from _UAB_** (2024) and am currently pursuing a 🎓**PhD in Economics at _CCA_ and _UAB_**.
-
+      <span style="color:gray;"><i>PhD student & RESTud's Social Media Manager</i></span><br><br>
+      Hi, I am a PhD student at [**_Collegio Carlo Alberto_**](https://www.carloalberto.org/) and  [**_Universitat Autònoma de Barcelona_**](https://www.uab.cat/web/universitat-autonoma-de-barcelona-1345467950436.html). My research focuses on how **digital technologies**, such as **social media** algorithms and **AI**.
+      Check my [CV](/cv/CV.pdf)
 
  
     imageUrl: "home/web.jpg"
-    imageWidth: 320
-    imageHeight: 370
+    imageWidth: 300
+    imageHeight: 350
     # buttons:
     #   - name: Resume
     #     url: ""
