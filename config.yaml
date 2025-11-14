@@ -83,7 +83,7 @@ params:
 
   socialIcons:
     - name: "email"
-      url: "mailto:kacper.krasowki@carloalberto.org"
+      url: "mailto:kacper.krasowski@carloalberto.org"
     - name: "github"
       url: "https://github.com/kacperkrasowski"
     - name: "x"
