@@ -3,7 +3,7 @@ title: ""
 layout: "page"
 ---
 
-## Working Papers
+## Working Papers 123
 
 - **"Impact of Censorship in Social Media"** (2024)  
   _This paper examines the impact of social media censorship on polarization, disagreement,
