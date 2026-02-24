@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Interactive \u0305Q vs \u03C6 Plot</title>
   <!-- Include Plotly.js -->
   <script src="https://cdn.plot.ly/plotly-2.24.1.min.js"></script>
@@ -101,7 +102,10 @@
       width: 100%;
     }
     #plotQ {
-      height: 420px;
+      width: 100%;
+      height: 500px;
+      border-radius: 10px;
+      overflow: hidden;
     }
   }
 </style>
@@ -230,7 +234,7 @@
 
     function updatePlot() {
       const css = getComputedStyle(document.documentElement);
-
+      const isMobile = window.innerWidth < 640;
       const cTheme = css.getPropertyValue('--theme').trim() || 'rgb(0,0,0)';
       const cEntry = css.getPropertyValue('--entry').trim() || 'rgb(20,20,24)';
       const cPrimary = css.getPropertyValue('--primary').trim() || 'rgb(240,240,245)';
@@ -277,36 +281,57 @@
         const el = document.getElementById('plotQ');
         if (el) Plotly.Plots.resize(el);
       });
+
+       const labels = isMobile
+        ? {
+            cq: 'CQ',
+            cq0: 'CQ (no AI)',
+            m: 'IS',
+            m0: 'IS (no AI)',
+            title: 'Info Supply & Quality vs AI Ability',
+            ytitle: 'Supply & Quality'
+          }
+        : {
+            cq: 'Consumed Quality',
+            cq0: 'Consumed Quality without AI',
+            m: 'Information Supply',
+            m0: 'Information Supply without AI',
+            title: 'How Information Supply and Consumed Quality Change with AI Improvements',
+            ytitle: 'Info Supply & Quality'
+          };
+
       const data = [
         {
           x: phiVals, y: yVals,
           type: 'scatter', mode: 'lines',
-          name: 'Consumed Quality',
+          name: labels.cq,
           line: { color: cAccent, width: 2.5 }
         },
         {
           x: phiVals, y: yValsBaseline,
           type: 'scatter', mode: 'lines',
-          name: 'Consumed Quality without AI',
+          name: labels.cq0,
           line: { color: cAccent, dash: 'dash', width: 2 }
         },
         {
           x: phiVals, y: yValsM,
           type: 'scatter', mode: 'lines',
-          name: 'Information Supply',
+          name: labels.m,
           line: { color: cRed, width: 2.5 }
         },
         {
           x: phiVals, y: yValsMBaseline,
           type: 'scatter', mode: 'lines',
-          name: 'Information Supply without AI',
+          name: labels.m0,
           line: { color: cRed, dash: 'dash', width: 2 }
         }
       ];
 
+
+
       const layout = {
         title: {
-          text: 'How Information Supply and Consumed Quality Change with AI Improvements',
+          text: labels.title,
           font: { color: cPrimary, size: 16 }
         },
         autosize: true,
