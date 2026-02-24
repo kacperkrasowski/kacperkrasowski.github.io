@@ -15,20 +15,23 @@
     --hljs-bg: rgb(28, 29, 33);
     --code-bg: rgb(245, 245, 245);
     --border: rgb(238, 238, 238);
-    --button-color: #fc2828
+    --accent: rgb(184,154,225);
+    --accent-active: rgb(150, 110, 185);
+
 }
 
 .dark {
-    --theme: rgb(29, 30, 32);
-    --entry: rgb(46, 46, 51);
-    --primary: rgb(218, 218, 219);
-    --secondary: rgb(155, 156, 157);
-    --tertiary: rgb(65, 66, 68);
-    --content: rgb(196, 196, 197);
-    --hljs-bg: rgb(46, 46, 51);
-    --code-bg: rgb(55, 56, 62);
-    --border: rgb(51, 51, 51);
-    --button-color: #9d0000
+    --theme: rgb(0, 0, 0);         /* page background */
+    --entry: rgb(31, 33, 41);         /* cards */
+    --primary: rgb(235, 235, 240);    /* main text */
+    --secondary: rgb(180, 185, 195);  /* muted text */
+    --tertiary: rgb(70, 75, 90);      /* borders / lines */
+    --content: rgb(226, 228, 234);    /* body text */
+    --hljs-bg: rgb(28, 30, 38);       /* code blocks */
+    --code-bg:rgb(31, 33, 41); 
+    --border: rgb(62, 67, 82);
+    --accent: rgb(184,154,225);
+    --accent-active: rgb(150, 110, 185);
 }
 
 
