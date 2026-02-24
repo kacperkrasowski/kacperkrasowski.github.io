@@ -43,7 +43,26 @@
 
   {{- if or .Params.pdf .Params.slides .Params.authors }}
   <footer class="entry-footer">
-    {{- with .Params.authors }}{{ delimit . ", " }}{{ end }}
+    {{- with .Params.authors -}}
+      {{- range $i, $a := . -}}
+        {{- if gt $i 0 }}, {{ end -}}
+
+        {{- if reflect.IsMap $a -}}
+          {{- $name := index $a "name" -}}
+          {{- $url := index $a "url" -}}
+          {{- if $url -}}
+            <a href="{{ $url }}" target="_blank" rel="noopener">{{ $name }}</a>
+          {{- else -}}
+            {{ $name }}
+          {{- end -}}
+
+        {{- else -}}
+          {{- /* plain string author */ -}}
+          {{ $a }}
+        {{- end -}}
+
+      {{- end -}}
+    {{- end -}}
   </footer>
   {{- end }}
 

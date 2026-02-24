@@ -20,11 +20,19 @@
   </url><url>
     <loc>http://localhost:1313/tags/facebook/</loc>
   </url><url>
+    <loc>http://localhost:1313/tags/genai/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/information-supply/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/internet-economics/</loc>
+  </url><url>
     <loc>http://localhost:1313/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/labor-economics/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/opinion-dynamics/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/platforms/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/polarization/</loc>
   </url><url>

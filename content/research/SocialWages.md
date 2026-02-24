@@ -4,8 +4,9 @@ description: "Quasi-experimental evidence on the effect of Facebook exposure dur
 paper_status: "working"   # working | published
 paper_year: 2025
 authors:
-  - "Kacper Krasowski"
-  - "Luca Marcianò"
+  - name: "Kacper Krasowski"
+  - name: "Luca Marcianò"
+    url: "https://sites.google.com/view/lucamarciano/home-page"
 slug: "social-media-wages"
 tags: ["research", "social media", "facebook", "labor economics", "difference-in-differences"]
 categories: ["Research"]
