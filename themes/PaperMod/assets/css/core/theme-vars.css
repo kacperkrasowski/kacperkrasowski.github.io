@@ -21,7 +21,7 @@
 }
 
 .dark {
-    --theme: rgb(0, 0, 0);         /* page background */
+    --theme: rgb(15, 15, 30);         /* page background */
     --entry: rgb(31, 33, 41);         /* cards */
     --primary: rgb(235, 235, 240);    /* main text */
     --secondary: rgb(180, 185, 195);  /* muted text */
