@@ -38,7 +38,7 @@ menu:
     #   weight: 70
 
 params:
-  keywords: ["economics", "PhD", "research", "Kacper Krasowski", "Social Media", "CCA", "UniTo", "UAB", "AI", "Digital", ]
+  keywords: ["economics", "PhD", "research", "Kacper Krasowski", "Social Media", "CCA", "UniTo", "UAB", "AI", "Digital", "LLM", "GenAI", "Barcelona", "Torino", "Turin", "Olsztyn"]
   author: "Kacper Krasowski"
   showToc: true
   TocOpen: false

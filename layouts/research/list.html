@@ -1,0 +1,100 @@
+{{- define "main" }}
+
+{{- if not .IsHome | and .Title }}
+<header class="page-header">
+  {{- partial "breadcrumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+  {{- if .Description }}
+  <div class="post-description">
+    {{ .Description | markdownify }}
+  </div>
+  {{- end }}
+</header>
+{{- end }}
+
+{{- if .Content }}
+<div class="post-content">
+  {{- if not (.Param "disableAnchoredHeadings") }}
+  {{- partial "anchored_headings.html" .Content -}}
+  {{- else }}{{ .Content }}{{ end }}
+</div>
+{{- end }}
+
+{{- $pages := .RegularPages.ByDate.Reverse }}
+{{- $working := where $pages "Params.paper_status" "working" }}
+{{- $published := where $pages "Params.paper_status" "published" }}
+
+<h2 style="margin-top: 1.5rem; margin-bottom: 1rem;">Working Papers</h2>
+
+{{- range $working }}
+<article class="post-entry">
+  <header class="entry-header">
+    <h2>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{- with .Params.paper_year }} ({{ . }}){{ end }}
+    </h2>
+  </header>
+
+  {{- with .Description }}
+  <div class="entry-content">
+    <p>{{ . }}</p>
+  </div>
+  {{- end }}
+
+  {{- if or .Params.pdf .Params.slides .Params.authors }}
+  <footer class="entry-footer">
+    {{- with .Params.authors }}{{ delimit . ", " }}{{ end }}
+  </footer>
+  {{- end }}
+
+  <div class="paper-buttons" style="margin-top: 0.75rem; display:flex; gap:0.5rem; flex-wrap:wrap;">
+    {{- with .Params.pdf }}
+    <a class="button" style="box-shadow:none;" href="{{ . | relURL }}" target="_blank" rel="noopener">PDF</a>
+    {{- end }}
+    {{- with .Params.slides }}
+    <a class="button" href="{{ . | relURL }}" target="_blank" rel="noopener">Slides</a>
+    {{- end }}
+  </div>
+</article>
+{{- else }}
+<p>No working papers yet.</p>
+{{- end }}
+
+<h2 style="margin-top: 1.5rem; margin-bottom: 1rem;">Published & Forthcoming</h2>
+
+
+{{- range $published }}
+<article class="post-entry">
+  <header class="entry-header">
+    <h2>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{- with .Params.paper_year }} ({{ . }}){{ end }}
+    </h2>
+  </header>
+
+  {{- with .Description }}
+  <div class="entry-content">
+    <p>{{ . }}</p>
+  </div>
+  {{- end }}
+
+  {{- if or .Params.pdf .Params.slides .Params.authors }}
+  <footer class="entry-footer">
+    {{- with .Params.authors }}{{ delimit . ", " }}{{ end }}
+  </footer>
+  {{- end }}
+
+  <div class="paper-buttons" style="margin-top: 0.75rem; display:flex; gap:0.5rem; flex-wrap:wrap;">
+    {{- with .Params.pdf }}
+    <a class="button" style="box-shadow:none;" href="{{ . | relURL }}" target="_blank" rel="noopener">PDF</a>
+    {{- end }}
+    {{- with .Params.slides }}
+    <a class="button" href="{{ . | relURL }}" target="_blank" rel="noopener">Slides</a>
+    {{- end }}
+  </div>
+</article>
+{{- else }}
+<p>No published papers yet.</p>
+{{- end }}
+
+{{- end }}
