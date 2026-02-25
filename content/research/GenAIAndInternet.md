@@ -11,7 +11,7 @@ tags: ["research", "genai", "internet economics", "platforms", "information supp
 categories: ["Research"]
 # buttons
 #pdf: "/research/genai/genaiandinternet_writeup.pdf"
-slides: "/research/genaiandinternet/genaiandinterent_slides.pdf"
+slides: "/research/genaiandinternet/genaiandinternet_slides.pdf"
 
 # optional
 hideMeta: true
