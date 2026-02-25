@@ -5,13 +5,13 @@ paper_status: "working"   # working | published
 paper_year: 2026
 authors:
   - "Kacper Krasowski"
-slug: "genai-and-the-internet"
+slug: "genaiandinternet"
 
 tags: ["research", "genai", "internet economics", "platforms", "information supply"]
 categories: ["Research"]
 # buttons
-#pdf: "/research/genai/genai_writeup.pdf"
-slides: "/research/genaiandinternet/genaiandinternet_slides.pdf"
+#pdf: "/research/genai/genaiandinternet_writeup.pdf"
+slides: "/research/genaiandinternet/genaiandinterent_slides.pdf"
 
 # optional
 hideMeta: true

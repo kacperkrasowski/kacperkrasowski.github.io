@@ -7,7 +7,7 @@ authors:
   - name: "Kacper Krasowski"
   - name: "Luca Marcianò"
     url: "https://sites.google.com/view/lucamarciano/home-page"
-slug: "social-media-wages"
+slug: "social"
 tags: ["research", "social media", "facebook", "labor economics", "difference-in-differences"]
 categories: ["Research"]
 weight: 1

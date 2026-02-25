@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/research/social-media-wages/</loc>
+    <loc>http://localhost:1313/research/social/</loc>
   </url><url>
     <loc>http://localhost:1313/research/censorship/</loc>
   </url><url>
-    <loc>http://localhost:1313/research/genai-and-the-internet/</loc>
+    <loc>http://localhost:1313/research/genaiandinternet/</loc>
   </url><url>
     <loc>http://localhost:1313/research/</loc>
   </url><url>
