@@ -63,7 +63,7 @@ params:
 
  
     imageUrl: "home/web.jpg"
-    imageWidth: 320
+    imageWidth: 300
     imageHeight: 400
     # buttons:
     #   - name: Resume
