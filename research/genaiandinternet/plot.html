@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interactive \u0305Q vs \u03C6 Plot</title>
+  <!-- Include Plotly.js -->
+  <script src="https://cdn.plot.ly/plotly-2.24.1.min.js"></script>
+  <style>
+  :root {
+    --bg: #1d1f27;
+    --panel: #232632;
+    --text: #e8e8ea;
+    --muted: #b8bcc8;
+    --border: #343a4a;
+    --accent: rgb(184, 154, 225);
+  }
+
+  #delta-slider { --slider-color: var(--accent); }
+  #eta-slider   { --slider-color: var(--accent); }
+  * { box-sizing: border-box; }
+
+  .slider-container input[type="range"] {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 180px;
+      height: 6px;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--slider-color) 35%, var(--entry));
+      border: 1px solid var(--border);
+      outline: none;
+      cursor: pointer;
+    }
+
+    /* WebKit track/thumb */
+    .slider-container input[type="range"]::-webkit-slider-runnable-track {
+      height: 6px;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--slider-color) 35%, var(--entry));
+    }
+
+    .slider-container input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 16px;
+      height: 16px;
+      margin-top: -6px; /* centers thumb on track */
+      border-radius: 50%;
+      background: var(--slider-color);
+      border: 2px solid var(--theme);
+      box-shadow: 0 0 0 1px var(--border);
+    }
+
+    /* Firefox track/thumb */
+    .slider-container input[type="range"]::-moz-range-track {
+      height: 6px;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--slider-color) 35%, var(--entry));
+      border: 1px solid var(--border);
+    }
+
+    .slider-container input[type="range"]::-moz-range-thumb {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--slider-color);
+      border: 2px solid var(--theme);
+      box-shadow: 0 0 0 1px var(--border);
+    }
+
+    /* Label text colors */
+    .slider-container label {
+      color: var(--primary);
+    }
+  body {
+    font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    margin: 0;
+    padding: 12px;
+    background: transparent; /* lets it blend into your site */
+    color: var(--content, var(--primary));
+  }
+
+  .viz-shell {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+
+  #plotQ {
+    width: 100%;
+    height: 520px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  @media (max-width: 700px) {
+    .slider-container label {
+      min-width: 100%;
+    }
+    .slider-container input[type="range"] {
+      width: 100%;
+    }
+    #plotQ {
+      width: 100%;
+      height: 500px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  }
+</style>
+</head>
+<body>
+  
+  <div class="viz-shell">
+    <div class="slider-container">
+      <label for="delta-slider">Web Preference over AI: <span id="delta-value">1.00</span></label>
+      <input type="range" id="delta-slider" min="0" max="2" step="0.05" value="1">
+    </div>
+
+    <div class="slider-container">
+      <label for="eta-slider">Fixed Cost Reduction: <span id="eta-value">0.00</span></label>
+      <input type="range" id="eta-slider" min="0" max="0.9" step="0.05" value="0.0">
+    </div>
+    <div id="plotQ"></div>
+  </div>
+  <script>
+    // Compute bar_Q for a given phi, delta_W, and eta
+    function computeBarQ(phi, deltaW, eta) {
+      const m = 1, F = 1, r = 1, gamma = 4, theta = 1;
+      const eps = 1e-9;
+
+      const d = Math.max(deltaW, eps);
+      const p = Math.max(phi, 0);
+
+      // Interior AI cutoff from your notes
+      const baseQ0 = Math.pow((F * m * gamma) / (r * (gamma - 1/theta)), 1 / gamma);
+      const cutoffFactor = Math.pow((1 - eta) * ((d + p) / d), 1 / gamma);
+      const Q0tilde = baseQ0 * cutoffFactor;
+
+      // Truncated cutoff (support starts at 1)
+      const Q0eff = Math.max(1, Q0tilde);
+
+      // Web quality mass S and web consumed quality Qbar_B
+      const S = m * (gamma / (gamma - 1/theta)) * Math.pow(Q0eff, 1/theta - gamma);
+      const QbarB = ((gamma - 1/theta) / (gamma - 1/theta - 1)) * Q0eff;
+
+      // AI quality and channel-weighted overall consumed quality
+      const QA = p * Math.pow(S, theta); // your Section 2.1 normalization
+      const denom = d + p;
+
+      const sW = d / denom;
+      const sA = p / denom;
+
+      return sW * QbarB + sA * QA;
+    }
+
+    function computeM(phi, deltaW, eta) {
+      const m = 1, F = 1, r = 1, gamma = 2.1, theta = 1;
+      const eps = 1e-9;
+
+      const d = Math.max(deltaW, eps);
+      const p = Math.max(phi, 0);
+
+      const baseQ0 = Math.pow((F * m * gamma) / (r * (gamma - 1/theta)), 1 / gamma);
+      const cutoffFactor = Math.pow((1 - eta) * ((d + p) / d), 1 / gamma);
+      const Q0tilde = baseQ0 * cutoffFactor;
+      const Q0eff = Math.max(1, Q0tilde);
+
+      return m * Math.pow(Q0eff, -gamma); // automatically <= m
+    }
+    // Generate array of phi values for the x-axis
+    const phiMin = 0;
+    const phiMax = 4;
+    const numPoints = 200;
+    const phiVals = [];
+    for (let i = 0; i <= numPoints; i++) {
+      const val = phiMin + (phiMax - phiMin) * i / numPoints;
+      phiVals.push(val);
+    }
+
+    function syncThemeVarsFromParent() {
+      try {
+        // If iframe is same-origin (it is on your Hugo site), this works
+        const parentDoc = window.parent && window.parent.document ? window.parent.document : document;
+
+        // PaperMod usually applies .dark on <body>, so read computed style from body
+        const sourceEl = parentDoc.body || parentDoc.documentElement;
+        const parentStyles = window.parent.getComputedStyle(sourceEl);
+
+        const root = document.documentElement;
+
+        // Copy the variables you use in the graph
+        const varsToCopy = [
+          '--theme',
+          '--entry',
+          '--primary',
+          '--secondary',
+          '--tertiary',
+          '--content',
+          '--border',
+          '--accent',
+          '--button-color'
+        ];
+
+        varsToCopy.forEach((name) => {
+          const val = parentStyles.getPropertyValue(name).trim();
+          if (val) root.style.setProperty(name, val);
+        });
+      } catch (e) {
+        // Fallback if opened standalone or cross-origin (won't happen on same site)
+        console.warn('Could not sync theme vars from parent:', e);
+      }
+    }
+    function watchParentThemeChanges() {
+      try {
+        const pDoc = window.parent.document;
+        const rerender = () => {
+          syncThemeVarsFromParent();
+          updatePlot();
+        };
+
+        const observer = new MutationObserver(rerender);
+
+        // Watch both html and body (themes may toggle class on either)
+        observer.observe(pDoc.documentElement, { attributes: true, attributeFilter: ['class', 'style'] });
+        if (pDoc.body) {
+          observer.observe(pDoc.body, { attributes: true, attributeFilter: ['class', 'style'] });
+        }
+      } catch (e) {
+        console.warn('Theme observer failed:', e);
+      }
+    }
+
+    function updatePlot() {
+      const css = getComputedStyle(document.documentElement);
+      const isMobile = window.innerWidth < 640;
+      const cTheme = css.getPropertyValue('--theme').trim() || 'rgb(0,0,0)';
+      const cEntry = css.getPropertyValue('--entry').trim() || 'rgb(20,20,24)';
+      const cPrimary = css.getPropertyValue('--primary').trim() || 'rgb(240,240,245)';
+      const cSecondary = css.getPropertyValue('--secondary').trim() || 'rgb(180,180,190)';
+      const cBorder = css.getPropertyValue('--border').trim() || 'rgb(50,50,60)';
+      const cAccent = css.getPropertyValue('--accent').trim() || 'rgb(184,154,225)';
+      const cRed = css.getPropertyValue('--button-color').trim() || 'rgb(184,0,0)';
+      const deltaW = parseFloat(document.getElementById('delta-slider').value);
+      const eta = parseFloat(document.getElementById('eta-slider').value);
+
+      document.getElementById('delta-value').textContent = deltaW.toFixed(2);
+      document.getElementById('eta-value').textContent = eta.toFixed(2);
+
+      // Compute bar_Q for all phi values
+      const yVals = phiVals.map(function(phi) {
+        return computeBarQ(phi, deltaW, eta);
+      });
+
+      // Compute M for all phi values
+      const yValsM = phiVals.map(function(phi) {
+        return computeM(phi, deltaW, eta);
+      });
+
+      // Compute bar_Q for no AI
+      const yValsBaseline = phiVals.map(function(phi) {
+        return computeBarQ(0, deltaW, 0);
+      });
+
+      // Compute M for no AI
+      const yValsMBaseline = phiVals.map(function(phi) {
+        return computeM(0, deltaW, 0);
+      });
+
+      // Determine y-axis range
+      let maxY = Math.max(...yVals);
+      if (!isFinite(maxY) || isNaN(maxY)) {
+        maxY = 1;
+      }
+      let maxYM = Math.max(...yValsM);
+      if (!isFinite(maxY) || isNaN(maxY)) {
+        maxY = 1;
+      }
+      window.addEventListener('resize', () => {
+        const el = document.getElementById('plotQ');
+        if (el) Plotly.Plots.resize(el);
+      });
+
+       const labels = isMobile
+        ? {
+            cq: 'CQ',
+            cq0: 'CQ (no AI)',
+            m: 'IS',
+            m0: 'IS (no AI)',
+            title: 'Info Supply & Quality vs AI Ability',
+            ytitle: 'Supply & Quality'
+          }
+        : {
+            cq: 'Consumed Quality',
+            cq0: 'Consumed Quality without AI',
+            m: 'Information Supply',
+            m0: 'Information Supply without AI',
+            title: 'How Information Supply and Consumed Quality Change with AI Improvements',
+            ytitle: 'Info Supply & Quality'
+          };
+
+      const data = [
+        {
+          x: phiVals, y: yVals,
+          type: 'scatter', mode: 'lines',
+          name: labels.cq,
+          line: { color: cAccent, width: 2.5 }
+        },
+        {
+          x: phiVals, y: yValsBaseline,
+          type: 'scatter', mode: 'lines',
+          name: labels.cq0,
+          line: { color: cAccent, dash: 'dash', width: 2 }
+        },
+        {
+          x: phiVals, y: yValsM,
+          type: 'scatter', mode: 'lines',
+          name: labels.m,
+          line: { color: cRed, width: 2.5 }
+        },
+        {
+          x: phiVals, y: yValsMBaseline,
+          type: 'scatter', mode: 'lines',
+          name: labels.m0,
+          line: { color: cRed, dash: 'dash', width: 2 }
+        }
+      ];
+
+
+
+      const layout = {
+        title: {
+          text: labels.title,
+          font: { color: cPrimary, size: 16 }
+        },
+        autosize: true,
+        paper_bgcolor: 'rgba(0,0,0,0)',
+        plot_bgcolor: cEntry,
+        font: { color: cPrimary },
+        xaxis: {
+          title: 'AI Ability',
+          range: [phiMin, phiMax],
+          gridcolor: cBorder,
+          zerolinecolor: cBorder,
+          linecolor: cBorder,
+          tickfont: { color: cSecondary },
+          titlefont: { color: cPrimary }
+        },
+        yaxis: {
+          title: 'Info Supply & Quality',
+          range: [0, 3],
+          gridcolor: cBorder,
+          zerolinecolor: cBorder,
+          linecolor: cBorder,
+          tickfont: { color: cSecondary },
+          titlefont: { color: cPrimary }
+        },
+        legend: {
+          x: 0.02,              // left padding inside plot
+          y: 0.98,              // near top
+          xanchor: 'left',
+          yanchor: 'top',
+          bgcolor: 'rgba(0,0,0,0.35)',   // or use a theme color with opacity
+          bordercolor: cBorder,
+          borderwidth: 1,
+          font: { color: cPrimary, size: 12 }
+        },
+        margin: { l: 60, r: 20, t: 45, b: 55 }
+      };
+
+      const config = {
+        displayModeBar: false,
+        responsive: true
+      };
+      Plotly.react('plotQ', data, layout, config);
+      
+    }
+
+  
+
+    document.getElementById('delta-slider').addEventListener('input', updatePlot);
+    document.getElementById('eta-slider').addEventListener('input', updatePlot);
+
+    // Initial plot
+    syncThemeVarsFromParent();
+    watchParentThemeChanges();
+    updatePlot();
+    //updatePlotM();
+  </script>
+</body>
+</html>
