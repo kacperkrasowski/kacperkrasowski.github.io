@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1773921290.34891 "/home/kacperkrasowski/studia/PhD/Torino/web/kacperkrasowski.github.io/static/cv/CV.tex" "out/CV.pdf" "CV" 1773921291.33141 0
-  "/home/kacperkrasowski/studia/PhD/Torino/web/kacperkrasowski.github.io/static/cv/CV.tex" 1773921290.10843 3580 f50ef5be7d4e242fb2257dee20a637d7 ""
+["pdflatex"] 1777284928.12597 "/home/kacperkrasowski/studia/PhD/Torino/web/kacperkrasowski.github.io/static/cv/CV.tex" "out/CV.pdf" "CV" 1777284928.98509 0
+  "/home/kacperkrasowski/studia/PhD/Torino/web/kacperkrasowski.github.io/static/cv/CV.tex" 1777284927.90513 3606 48ac23310baa9a361c59704ed044f371 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -70,9 +70,9 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1769717990 5541377 824b1e5beafd2ebda40585373b35bb6b ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1769718122 3636380 a7503dbadb7e999b97f97ddb6e800da1 ""
   "/usr/local/texlive/2025/texmf.cnf" 1769717984.63827 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
-  "CV.tex" 1773921290.10843 3580 f50ef5be7d4e242fb2257dee20a637d7 ""
-  "out/CV.aux" 1773921291.24043 162 87159b23cce7c2b923b11c85495bbd6d "pdflatex"
-  "out/CV.out" 1773921291.05588 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "CV.tex" 1777284927.90513 3606 48ac23310baa9a361c59704ed044f371 ""
+  "out/CV.aux" 1777284928.89058 162 87159b23cce7c2b923b11c85495bbd6d "pdflatex"
+  "out/CV.out" 1777284928.72358 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "out/CV.aux"
   "out/CV.log"
