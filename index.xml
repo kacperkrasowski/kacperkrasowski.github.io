@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Kacper Krasowski</title>
+    <link>https://kacperkrasowski.github.io/</link>
+    <description>Recent content on Kacper Krasowski</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://kacperkrasowski.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Social Media and Labor Market outcomes. An analysis of Facebook effect on college graduates earnings</title>
+      <link>https://kacperkrasowski.github.io/research/social/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kacperkrasowski.github.io/research/social/</guid>
+      <description>Quasi-experimental evidence on the effect of Facebook exposure during college on graduates’ earnings.</description>
+    </item>
+    
+    <item>
+      <title>Impact of Censorship in Social Media</title>
+      <link>https://kacperkrasowski.github.io/research/censorship/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kacperkrasowski.github.io/research/censorship/</guid>
+      <description>A model of censorship in social networks using Friedkin–Johnsen opinion dynamics, with implications for polarization, disagreement, and welfare.</description>
+    </item>
+    
+    <item>
+      <title>GenAI and the Internet</title>
+      <link>https://kacperkrasowski.github.io/research/genaiandinternet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kacperkrasowski.github.io/research/genaiandinternet/</guid>
+      <description>A simple model of how Generative AI changes online content supply and consumed quality through user choice and provider entry.</description>
+    </item>
+    
+    
+  </channel>
+</rss>
