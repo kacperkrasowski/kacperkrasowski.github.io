@@ -1,10 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.1.29)  27 APR 2026 12:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.1.29)  17 SEP 2026 18:55
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/kacperkrasowski/studia/PhD/Torino/web/kacperkrasowski.github.io/static/cv/CV.tex
-(/home/kacperkrasowski/studia/PhD/Torino/web/kacperkrasowski.github.io/static/cv/CV.tex
+**static/cv/CV.tex
+(./static/cv/CV.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (/usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
@@ -23,20 +22,26 @@ File: size11.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 \bibindent=\dimen148
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/base/inputenc.sty
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks19
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
 \Gm@cnth=\count283
@@ -51,54 +56,73 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@layouthoffset=\dimen155
 \Gm@layoutvoffset=\dimen156
 \Gm@dimlist=\toks20
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/hyperref.sty
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
- (/usr/local/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
- (/usr/local/texlive/2025/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (/usr/local/texlive/2025/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)) (/usr/local/texlive/2025/texmf-dist/tex/latex/hycolor/hycolor.sty
+))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/nameref.sty
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2025-06-21 v2.57 Cross-referencing by name of section
- (/usr/local/texlive/2025/texmf-dist/tex/latex/refcount/refcount.sty
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
+ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
  (/usr/local/texlive/2025/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
 \c@section@level=\count286
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count287
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/stringenc/stringenc.sty
-Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
 )
 \@linkdim=\dimen157
 \Hy@linkcounter=\count288
 \Hy@pagecounter=\count289
- (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/pd1enc.def
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/intcalc/intcalc.sty
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count290
- (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/puenc.def
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
@@ -111,16 +135,20 @@ Package hyperref Info: Backreferencing OFF on input line 4215.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4462.
 \c@Hy@tempcnt=\count291
- (/usr/local/texlive/2025/texmf-dist/tex/latex/url/url.sty
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4801.
 \XeTeXLinkMargin=\dimen158
- (/usr/local/texlive/2025/texmf-dist/tex/generic/bitset/bitset.sty
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
- (/usr/local/texlive/2025/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
 ))
 \Fld@menulength=\count292
 \Field@Width=\dimen159
@@ -137,16 +165,20 @@ Package hyperref Info: PDF/A mode OFF on input line 6108.
 \c@Hfootnote=\count295
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/hpdftex.def
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
 \Fld@listcount=\count296
 \c@bookmark@seq@number=\count297
- (/usr/local/texlive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
- (/usr/local/texlive/2025/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+84.
 )
 \Hy@SectionHShift=\skip51
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/enumitem/enumitem.sty
@@ -157,7 +189,8 @@ Package: enumitem 2025/02/06 v3.11 Customized lists
 \enit@inbox=\box53
 \enit@count@id=\count298
 \enitdp@description=\count299
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/titlesec/titlesec.sty
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \ttl@box=\box54
 \beforetitleunit=\skip53
@@ -168,9 +201,11 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \titlewidth=\dimen164
 \titlewidthlast=\dimen165
 \titlewidthfirst=\dimen166
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/tabularx.sty
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
- (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/array.sty
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tools/array.sty
 Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \col@sep=\dimen167
 \ar@mcellbox=\box55
@@ -187,30 +222,32 @@ Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \TX@delta=\dimen173
 \TX@cols=\count300
 \TX@ftn=\toks24
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count301
-) (out/CV.aux)
+)
+(static/cv/out/CV.aux)
 \openout1 = `CV.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -246,40 +283,42 @@ LaTeX Font Info:    ... okay on input line 27.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 27.
-(out/CV.out) (out/CV.out)
+Package hyperref Info: Link coloring OFF on input line 35.
+(static/cv/out/CV.out) (static/cv/out/CV.out)
 \@outlinefile=\write3
 \openout3 = `CV.out'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--59
+Underfull \hbox (badness 10000) in paragraph at lines 67--67
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--66
+Underfull \hbox (badness 10000) in paragraph at lines 74--74
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--73
+Underfull \hbox (badness 10000) in paragraph at lines 81--81
 
  []
 
 [1
 
-{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 85--88
+{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
+al/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local
+/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+Underfull \hbox (badness 10000) in paragraph at lines 105--108
 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 91.
+(Font)              <10.95> on input line 111.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 91.
+(Font)              <8> on input line 111.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 91.
-[2] (out/CV.aux)
+(Font)              <6> on input line 111.
+[2] (static/cv/out/CV.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -288,15 +327,21 @@ Package rerunfilecheck Info: File `CV.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 9043 strings out of 467533
- 139148 string characters out of 5419495
- 567620 words of memory out of 5000000
- 37882 multiletter control sequences out of 15000+600000
+ 9044 strings out of 467533
+ 139061 string characters out of 5419495
+ 567676 words of memory out of 5000000
+ 37883 multiletter control sequences out of 15000+600000
  637654 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,5n,79p,329b,441s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb>
-Output written on out/CV.pdf (2 pages, 139135 bytes).
+ 75i,6n,79p,259b,441s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb>
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></
+usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></us
+r/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/
+local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/lo
+cal/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/loca
+l/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb>
+Output written on static/cv/out/CV.pdf (2 pages, 139818 bytes).
 PDF statistics:
  59 PDF objects out of 1000 (max. 8388607)
  39 compressed objects within 1 object stream
