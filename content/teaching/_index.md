@@ -17,7 +17,7 @@ Barcelona School of Economics, 2026
 - [**Econometrics**](https://floswald.github.io/teaching/econometrics/)   
 University of Turin, 2025  
 
-- [**Optimization**](https://drive.google.com/file/d/1_eCOLOGX1VZd4hju14qPV4Oo61izy2Sa/view?usp=sharing)  
+- [**Optimization**](https://github.com/kacperkrasowski/OptimizationIDEA)  
 Universitat Autònoma de Barcelona, 2026
 
 - [**Contracts, Information and Incentives in Organizations**](https://drive.google.com/file/d/198KlJI0iWffeWsDNxgO-3FFltWTQR7kL/view?usp=sharing)  
