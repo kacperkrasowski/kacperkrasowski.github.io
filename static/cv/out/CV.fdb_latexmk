@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1789664108.36875 "static/cv/CV.tex" "static/cv/out/CV.pdf" "CV" 1789664109.36937 0
+["pdflatex"] 1793279987.3733 "static/cv/CV.tex" "static/cv/out/CV.pdf" "CV" 1793279988.28794 0
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -44,7 +44,6 @@
   "/usr/local/texlive/2025/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty" 1576624663 7008 f92eaa0a3872ed622bbf538217cd2ab7 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls" 1748806692 20144 b966087dda3b194755eb460d32e2ef75 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty" 1761946296 5275 6f9d359641b36842524cdb97716ab75f ""
-  "/usr/local/texlive/2025/texmf-dist/tex/latex/base/inputenc.sty" 1738182759 5048 0270515b828149155424600fd2d58ac5 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/base/size11.clo" 1748806692 8464 f339f4d5391fbe0425b2d94c90e6819e ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/enumitem/enumitem.sty" 1738874546 52272 63d293bc0d496619edb57585740861a2 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1759437024 46885 8953c67ffba03252c6090aa19568b8ba ""
@@ -59,19 +58,18 @@
   "/usr/local/texlive/2025/texmf-dist/tex/latex/kvoptions/kvoptions.sty" 1655478651 22555 6d8e155cfef6d82c3d5c742fea7c992e ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty" 1665067230 13815 760b0c02f691ea230f5359c4e1de23a7 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1761248321 30662 bfd6e864f4ffc5018b0e2b6260c3181c ""
+  "/usr/local/texlive/2025/texmf-dist/tex/latex/needspace/needspace.sty" 1742067607 1297 95e05b694b6d7375c39c5145fe24b731 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/refcount/refcount.sty" 1576624809 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1750533675 9684 a33a14b82ce60d6e77cb9be689d79ee6 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/titlesec/titlesec.sty" 1736023606 48766 87a17a4ef312a39cd43896e34a679a56 ""
-  "/usr/local/texlive/2025/texmf-dist/tex/latex/tools/array.sty" 1761946296 15651 9d7c62df82cb29a555c00550babfe364 ""
-  "/usr/local/texlive/2025/texmf-dist/tex/latex/tools/tabularx.sty" 1748806692 7243 a2c17f18e2c9b702b84fad03d5f9c78b ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/url/url.sty" 1388531844 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf" 1749313668 42213 4e2ca030e8e2640502016e9e45868dcb ""
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1769717990 5541377 824b1e5beafd2ebda40585373b35bb6b ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1769718122 3636380 a7503dbadb7e999b97f97ddb6e800da1 ""
   "/usr/local/texlive/2025/texmf.cnf" 1769717984.63827 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
-  "static/cv/CV.tex" 1789664101.94787 4132 bd2379cda23013ab7832f35cd6f941cf ""
-  "static/cv/out/CV.aux" 1789664109.25588 162 87159b23cce7c2b923b11c85495bbd6d "pdflatex"
-  "static/cv/out/CV.out" 1789664109.05188 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "static/cv/CV.tex" 1793279982.32067 4756 7b738dbc3d9c6f86953173b633373ff4 ""
+  "static/cv/out/CV.aux" 1793279988.18567 162 87159b23cce7c2b923b11c85495bbd6d "pdflatex"
+  "static/cv/out/CV.out" 1793279988.00667 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "static/cv/out/CV.aux"
   "static/cv/out/CV.log"

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.1.29)  17 SEP 2026 18:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.1.29)  29 OCT 2026 14:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -23,11 +23,6 @@ File: size11.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \belowcaptionskip=\skip50
 \bibindent=\dimen148
 )
-(/usr/local/texlive/2025/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2024/02/08 v1.3d Input encoding file
-\inpenc@prehook=\toks17
-\inpenc@posthook=\toks18
-)
 (/usr/local/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 )
@@ -36,7 +31,7 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks19
+\KV@toks@=\toks17
 )
 (/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
@@ -55,7 +50,7 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@layoutheight=\dimen154
 \Gm@layouthoffset=\dimen155
 \Gm@layoutvoffset=\dimen156
-\Gm@dimlist=\toks20
+\Gm@dimlist=\toks18
 )
 (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
@@ -185,7 +180,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip52
 \enit@outerparindent=\dimen161
-\enit@toks=\toks21
+\enit@toks=\toks19
 \enit@inbox=\box53
 \enit@count@id=\count298
 \enitdp@description=\count299
@@ -197,72 +192,54 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \aftertitleunit=\skip54
 \ttl@plus=\dimen162
 \ttl@minus=\dimen163
-\ttl@toksa=\toks22
+\ttl@toksa=\toks20
 \titlewidth=\dimen164
 \titlewidthlast=\dimen165
 \titlewidthfirst=\dimen166
 )
-(/usr/local/texlive/2025/texmf-dist/tex/latex/tools/tabularx.sty
-Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
-
-(/usr/local/texlive/2025/texmf-dist/tex/latex/tools/array.sty
-Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
-\col@sep=\dimen167
-\ar@mcellbox=\box55
-\extrarowheight=\dimen168
-\NC@list=\toks23
-\extratabsurround=\skip55
-\backup@length=\skip56
-\ar@cellbox=\box56
-)
-\TX@col@width=\dimen169
-\TX@old@table=\dimen170
-\TX@old@col=\dimen171
-\TX@target=\dimen172
-\TX@delta=\dimen173
-\TX@cols=\count300
-\TX@ftn=\toks24
+(/usr/local/texlive/2025/texmf-dist/tex/latex/needspace/needspace.sty
+Package: needspace 2025/03/13 v1.3e reserve vertical space
 )
 (/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count301
+\l__color_backend_stack_int=\count300
 )
 (static/cv/out/CV.aux)
 \openout1 = `CV.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
-* paper: letterpaper
+* paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(61.42993pt, 491.43513pt, 61.42993pt)
-* v-part:(T,H,B)=(61.42993pt, 672.11012pt, 61.42993pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=491.43513pt
-* \textheight=672.11012pt
+* h-part:(L,W,R)=(61.42993pt, 474.64801pt, 61.42993pt)
+* v-part:(T,H,B)=(61.42993pt, 722.18698pt, 61.42993pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=474.64801pt
+* \textheight=722.18698pt
 * \oddsidemargin=-10.84006pt
 * \evensidemargin=-10.84006pt
 * \topmargin=-47.84006pt
@@ -270,7 +247,7 @@ LaTeX Font Info:    ... okay on input line 35.
 * \headsep=25.0pt
 * \topskip=11.0pt
 * \footskip=30.0pt
-* \marginparwidth=59.0pt
+* \marginparwidth=50.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
 * \skip\footins=10.0pt plus 4.0pt minus 2.0pt
@@ -283,24 +260,22 @@ LaTeX Font Info:    ... okay on input line 35.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 35.
+Package hyperref Info: Link coloring OFF on input line 41.
 (static/cv/out/CV.out) (static/cv/out/CV.out)
 \@outlinefile=\write3
 \openout3 = `CV.out'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--67
-
+Overfull \hbox (36.57552pt too wide) in paragraph at lines 43--48
+[]\T1/cmr/m/n/10.95 kacperkra-sowski2000@gmail.com[] | +48 530 732 802 | []kacp
+erkra-sowski.github.io[] | []github.com/kacperkrasowski[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--74
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 81--81
-
+Overfull \hbox (4.62924pt too wide) in paragraph at lines 50--52
+[]\T1/cmr/m/n/10.95 PhD stu-dent in Eco-nomics at \T1/cmr/bx/n/10.95 Col-le-gio
+ Carlo Al-berto \T1/cmr/m/n/10.95 and \T1/cmr/bx/n/10.95 Uni-ver-si-tat Autònom
+a de Barcelona\T1/cmr/m/n/10.95 . 
  []
 
 [1
@@ -308,17 +283,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--81
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
 al/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local
 /texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 105--108
-
- []
-
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 111.
+(Font)              <10.95> on input line 127.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 111.
+(Font)              <8> on input line 127.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 111.
-[2] (static/cv/out/CV.aux)
+(Font)              <6> on input line 127.
+ [2]
+(static/cv/out/CV.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -327,13 +299,13 @@ Package rerunfilecheck Info: File `CV.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 9044 strings out of 467533
- 139061 string characters out of 5419495
- 567676 words of memory out of 5000000
- 37883 multiletter control sequences out of 15000+600000
+ 8908 strings out of 467533
+ 137002 string characters out of 5419495
+ 565848 words of memory out of 5000000
+ 37752 multiletter control sequences out of 15000+600000
  637654 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,6n,79p,259b,441s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,5n,79p,259b,444s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb>
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></
 usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></us
@@ -341,10 +313,10 @@ r/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/
 local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/lo
 cal/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/loca
 l/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb>
-Output written on static/cv/out/CV.pdf (2 pages, 139818 bytes).
+Output written on static/cv/out/CV.pdf (2 pages, 139831 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
- 39 compressed objects within 1 object stream
+ 66 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
  3 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
