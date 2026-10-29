@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.1.29)  29 OCT 2026 14:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.1.29)  29 OCT 2026 14:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -265,20 +265,7 @@ Package hyperref Info: Link coloring OFF on input line 41.
 \@outlinefile=\write3
 \openout3 = `CV.out'.
 
-
-Overfull \hbox (36.57552pt too wide) in paragraph at lines 43--48
-[]\T1/cmr/m/n/10.95 kacperkra-sowski2000@gmail.com[] | +48 530 732 802 | []kacp
-erkra-sowski.github.io[] | []github.com/kacperkrasowski[] 
- []
-
-
-Overfull \hbox (4.62924pt too wide) in paragraph at lines 50--52
-[]\T1/cmr/m/n/10.95 PhD stu-dent in Eco-nomics at \T1/cmr/bx/n/10.95 Col-le-gio
- Carlo Al-berto \T1/cmr/m/n/10.95 and \T1/cmr/bx/n/10.95 Uni-ver-si-tat Autònom
-a de Barcelona\T1/cmr/m/n/10.95 . 
- []
-
-[1
+ [1
 
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
 al/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local
@@ -289,8 +276,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 127.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 127.
- [2]
-(static/cv/out/CV.aux)
+ [2] (static/cv/out/CV.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -313,10 +299,10 @@ r/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/
 local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/lo
 cal/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/loca
 l/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb>
-Output written on static/cv/out/CV.pdf (2 pages, 139831 bytes).
+Output written on static/cv/out/CV.pdf (2 pages, 139356 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
- 46 compressed objects within 1 object stream
+ 65 PDF objects out of 1000 (max. 8388607)
+ 45 compressed objects within 1 object stream
  3 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
