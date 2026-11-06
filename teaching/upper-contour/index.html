@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta name="google-site-verification" content="sasWNli4MuTfLs2RlfEJ2iS6aHy3wAu4LqgvmLT255Y" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Upper Contour Sets &amp; Supporting Hyperplanes | Kacper Krasowski</title>
+<meta name="keywords" content="">
+<meta name="description" content="Explore upper contour sets, supergradients, and supporting lines for two concave functions.">
+<meta name="author" content="Kacper Krasowski">
+<link rel="canonical" href="https://kacperkrasowski.github.io/teaching/upper-contour/">
+<link crossorigin="anonymous" href="https://kacperkrasowski.github.io/assets/css/stylesheet.min.b8c081bdcab177efdbc34fbb786717466ab5a619d03bd285425007c62d4de463.css" integrity="sha256-uMCBvcqxd&#43;/bw0&#43;7eGcXRmq1phnQO9KFQlAHxi1N5GM=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="https://kacperkrasowski.github.io/assets/js/highlight.min.30d2332871da51f600f574811c17751e6c862577d450b624f86e2bc8a6e31221.js" integrity="sha256-MNIzKHHaUfYA9XSBHBd1HmyGJXfUULYk&#43;G4ryKbjEiE="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://kacperkrasowski.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://kacperkrasowski.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://kacperkrasowski.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://kacperkrasowski.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://kacperkrasowski.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://kacperkrasowski.github.io/teaching/upper-contour/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Upper Contour Sets &amp; Supporting Hyperplanes" />
+<meta property="og:description" content="Explore upper contour sets, supergradients, and supporting lines for two concave functions." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kacperkrasowski.github.io/teaching/upper-contour/" /><meta property="article:section" content="teaching" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Upper Contour Sets &amp; Supporting Hyperplanes"/>
+<meta name="twitter:description" content="Explore upper contour sets, supergradients, and supporting lines for two concave functions."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "",
+      "item": "https://kacperkrasowski.github.io/teaching/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Upper Contour Sets \u0026 Supporting Hyperplanes",
+      "item": "https://kacperkrasowski.github.io/teaching/upper-contour/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Upper Contour Sets \u0026 Supporting Hyperplanes",
+  "name": "Upper Contour Sets \u0026 Supporting Hyperplanes",
+  "description": "Explore upper contour sets, supergradients, and supporting lines for two concave functions.",
+  "keywords": [
+    
+  ],
+  "articleBody": "",
+  "wordCount" : "0",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Kacper Krasowski"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://kacperkrasowski.github.io/teaching/upper-contour/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Kacper Krasowski",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kacperkrasowski.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header sticky-header">
+    <meta name="google-site-verification" content="sasWNli4MuTfLs2RlfEJ2iS6aHy3wAu4LqgvmLT255Y" />
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://kacperkrasowski.github.io/" accesskey="h" title="Kacper Krasowski (Alt + H)">Kacper Krasowski</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://kacperkrasowski.github.io/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://kacperkrasowski.github.io/research" title="Research">
+                    <span>Research</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://kacperkrasowski.github.io/teaching" title="Teaching">
+                    <span>Teaching</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<link rel="stylesheet" href="https://kacperkrasowski.github.io/css/upper-contour.min.2a8741ed2193bdffc317516ed66a258323f45ca98f40f76c6161883d324c19b4.css" integrity="sha256-KodB7SGTvf/DF1Fu1molgyP0XKmPQPdsYWGIPTJMGbQ=">
+<article class="post-single upper-contour" id="upper-contour">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://kacperkrasowski.github.io/teaching/">← Teaching</a><span>&nbsp; / Optimization</span></div>
+    <h1 class="post-title">Upper Contour Sets<br>&amp; Supporting Hyperplanes</h1>
+    <p class="uc-intro">Build the geometry one layer at a time. Move x<sup>*</sup> to explore how a supergradient supports an upper contour set.</p>
+  </header>
+
+  <section class="uc-controls" aria-label="Visualization controls">
+    <div class="uc-function-row">
+      <label for="uc-function">Function</label>
+      <select id="uc-function">
+        <option value="quadratic">Quadratic · f(x) = x₁ − x₂²</option>
+        <option value="kinky">Kinky · f(x) = x₁ − |x₂|</option>
+      </select>
+      <button type="button" id="uc-reset">Reset</button>
+    </div>
+    <div class="uc-layers" role="group" aria-label="Progressive layers">
+      <button type="button" id="uc-point-toggle" aria-pressed="false" aria-controls="uc-point-layer uc-upper-set">Add x* + UPC</button>
+      <button type="button" id="uc-vector-toggle" aria-pressed="false" aria-controls="uc-vector-layer" disabled title="Add x* + UPC first">Add p</button>
+      <button type="button" id="uc-plane-toggle" aria-pressed="false" aria-controls="uc-plane-layer" disabled title="Add p first">Add Hyperplane</button>
+    </div>
+    <div class="uc-options" id="uc-kink-controls" hidden>
+      <button type="button" id="uc-snap">Snap to kink</button>
+      <div id="uc-slider-control" class="uc-slider-control" hidden>
+        <label for="uc-t">t = <output id="uc-t-value" for="uc-t">0.00</output></label>
+        <input type="range" id="uc-t" min="-1" max="1" step="0.01" value="0" aria-label="Supergradient parameter t at the kink">
+        <span class="uc-muted">−1 ≤ t ≤ 1</span>
+      </div>
+    </div>
+    <label class="uc-halfspace-option" id="uc-halfspace-control" hidden>
+      <input type="checkbox" id="uc-halfspace-toggle" checked> Shade supporting halfspace H<sup>+</sup>
+    </label>
+  </section>
+
+  <figure class="uc-figure" aria-labelledby="uc-caption">
+    <svg id="uc-plot" viewBox="0 0 720 500" role="group" aria-labelledby="uc-plot-title uc-plot-description">
+      <title id="uc-plot-title">Upper contour set in the x₁–x₂ plane</title>
+      <desc id="uc-plot-description">Initially the zero-level contour. Add x star to shade points with f(x) at least f(x star), then add a supergradient and its supporting line.</desc>
+      <defs>
+        <clipPath id="uc-clip"><rect x="54" y="20" width="636" height="432"/></clipPath>
+        <pattern id="uc-hatch" patternUnits="userSpaceOnUse" width="10" height="10">
+          <path d="M-2 2L2 -2M0 10L10 0M8 12L12 8" class="uc-hatch-line"/>
+        </pattern>
+        <marker id="uc-arrowhead" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+          <path d="M0 0L10 5L0 10Z" class="uc-arrowhead"/>
+        </marker>
+      </defs>
+      <g clip-path="url(#uc-clip)">
+        <path id="uc-halfspace" fill="url(#uc-hatch)" hidden/>
+        <path id="uc-upper-set" class="uc-upper-set" hidden/>
+        <g id="uc-grid" class="uc-grid" aria-hidden="true"></g>
+        <g id="uc-axes" class="uc-axes" aria-hidden="true"></g>
+        <path id="uc-contour" class="uc-contour"/>
+        <g id="uc-plane-layer" hidden>
+          <path id="uc-plane" class="uc-plane"/>
+          <text id="uc-plane-label" class="uc-plot-label">H</text>
+        </g>
+        <g id="uc-vector-layer" hidden>
+          <path id="uc-vector" class="uc-vector" marker-end="url(#uc-arrowhead)"/>
+          <text id="uc-vector-label" class="uc-plot-label uc-vector-label">p</text>
+        </g>
+        <g id="uc-point-layer" hidden>
+          <g id="uc-point" tabindex="0" role="button" aria-label="Move x star" aria-describedby="uc-drag-help">
+            <circle r="24" class="uc-point-hit"/>
+            <circle r="6" class="uc-point-dot"/>
+          </g>
+          <text id="uc-point-label" class="uc-plot-label">x*</text>
+        </g>
+      </g>
+      <g id="uc-ticks" class="uc-ticks" aria-hidden="true"></g>
+      <text x="705" y="475" text-anchor="end" class="uc-axis-label">x₁</text>
+      <text x="40" y="38" text-anchor="end" class="uc-axis-label">x₂</text>
+    </svg>
+    <figcaption id="uc-caption">
+      <span class="uc-legend-item"><span class="uc-swatch uc-contour-swatch"></span><span id="uc-contour-key">f(x) = 0</span></span>
+      <span class="uc-legend-item" id="uc-upc-key" hidden><span class="uc-swatch uc-upc-swatch"></span>C<sub>f</sub>(x<sup>*</sup>)</span>
+      <span class="uc-legend-item" id="uc-vector-key" hidden><span class="uc-vector-swatch">↗</span>p</span>
+      <span class="uc-legend-item" id="uc-plane-key" hidden><span class="uc-swatch uc-plane-swatch"></span>H</span>
+      <span class="uc-legend-item" id="uc-halfspace-key" hidden><span class="uc-swatch uc-halfspace-swatch"></span>H<sup>+</sup></span>
+    </figcaption>
+  </figure>
+  <p class="uc-help" id="uc-drag-help">Add x* + UPC to begin. Then drag x* with a mouse or touch, or focus it and use the arrow keys (Shift for larger steps).</p>
+
+  <aside class="uc-info" aria-label="Current mathematical values">
+    <p class="uc-status" id="uc-status" role="status">Zero-level contour · f(x) = 0</p>
+    <div id="uc-values" hidden>
+      <dl class="uc-values">
+        <div><dt>x<sup>*</sup></dt><dd id="uc-coordinates"></dd></div>
+        <div><dt>f(x<sup>*</sup>)</dt><dd id="uc-level"></dd></div>
+        <div id="uc-p-value-row" hidden><dt>p</dt><dd id="uc-p-value"></dd></div>
+      </dl>
+      <p class="uc-equation">C<sub>f</sub>(x<sup>*</sup>) = {x : f(x) ≥ f(x<sup>*</sup>)}<br><span id="uc-upc-equation"></span></p>
+      <div id="uc-plane-equations" hidden>
+        <p class="uc-equation">H = {x : p · (x − x<sup>*</sup>) = 0}<br><span id="uc-plane-equation"></span></p>
+        <p class="uc-equation">H<sup>+</sup> = {x : p · (x − x<sup>*</sup>) ≥ 0}<br><span id="uc-halfspace-equation"></span></p>
+        <p class="uc-containment">C<sub>f</sub>(x<sup>*</sup>) ⊆ H<sup>+</sup>. Lavender lies within the supporting halfspace.</p>
+      </div>
+      <p class="uc-fine-print" id="uc-precision-note">Values rounded to 2 decimals.</p>
+    </div>
+  </aside>
+
+  <details class="uc-explanation">
+    <summary>Why does the halfspace contain the upper contour set?</summary>
+    <p>Both functions are concave. A supergradient p satisfies f(x) ≤ f(x<sup>*</sup>) + p · (x − x<sup>*</sup>). So f(x) ≥ f(x<sup>*</sup>) implies p · (x − x<sup>*</sup>) ≥ 0.</p>
+    <p>Here H is a line in the (x₁, x₂) plane supporting C<sub>f</sub>(x<sup>*</sup>). The graph of f would live in three dimensions.</p>
+    <p id="uc-supergradient-rule">Quadratic: p = (1, −2x₂*).</p>
+  </details>
+  <noscript><p>This visualization needs JavaScript to enable its interactive controls.</p></noscript>
+</article>
+
+<script src="https://kacperkrasowski.github.io/js/upper-contour.min.9651e8a9b44a2b698cc0b7aa1aa68579608c3c02792cda97e76c1c9e7eed7bea.js" integrity="sha256-llHoqbRKK2mMwLeqGqaFeWCMPAJ5LNqX52wcnn7te&#43;o=" defer></script>
+
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2026 <a href="https://kacperkrasowski.github.io/">Kacper Krasowski</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
