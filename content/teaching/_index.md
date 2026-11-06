@@ -18,7 +18,8 @@ Barcelona School of Economics, 2026
 University of Turin, 2025  
 
 - [**Optimization**](https://github.com/kacperkrasowski/OptimizationIDEA)  
-Universitat Autònoma de Barcelona, 2026
+Universitat Autònoma de Barcelona, 2026<br>
+<small><a href="/teaching/upper-contour/">Interactive Upper Contour Sets ↗</a></small>
 
 - [**Contracts, Information and Incentives in Organizations**](https://drive.google.com/file/d/198KlJI0iWffeWsDNxgO-3FFltWTQR7kL/view?usp=sharing)  
 Universitat Autònoma de Barcelona, 2026
