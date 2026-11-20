@@ -20,7 +20,7 @@ University of Turin, 2025
 - [**Optimization**](https://github.com/kacperkrasowski/OptimizationIDEA)  
 Universitat Autònoma de Barcelona, 2026<br>
 <small><a href="/teaching/upper-contour/">Interactive Upper Contour Sets ↗</a><br>
-<a href="/teaching/ta9/">TA 9: Interactive Level Sets · Exercises 9.4 &amp; 9.6 ↗</a></small>
+<a href="/teaching/ta9/">TA 9: Interactive Level Sets · Exercises 9.4, 9.5 &amp; 9.6 ↗</a></small>
 
 - [**Contracts, Information and Incentives in Organizations**](https://drive.google.com/file/d/198KlJI0iWffeWsDNxgO-3FFltWTQR7kL/view?usp=sharing)  
 Universitat Autònoma de Barcelona, 2026

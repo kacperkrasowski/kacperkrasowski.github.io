@@ -10,6 +10,7 @@
 
   <nav class="ta-tabs" aria-label="Exercise">
     <a href="#exercise-9-4" id="ta-tab-94" aria-current="page">9.4 <span>Ellipses &amp; a circle</span></a>
+    <a href="#exercise-9-5" id="ta-tab-95">9.5 <span>Two ellipses</span></a>
     <a href="#exercise-9-6" id="ta-tab-96">9.6 <span>Cost &amp; constraints</span></a>
   </nav>
 
@@ -17,6 +18,11 @@
     <span class="ta-direction">MAXIMIZE</span>
     <span class="ta-formula">f(x, y) = x²/a² + y²/b²</span>
     <span class="ta-subject">subject to <strong>x² + y² = 1</strong></span>
+  </div>
+  <div class="ta-problem" id="ta-problem-95" hidden>
+    <span class="ta-direction">MAXIMIZE</span>
+    <span class="ta-formula">f(x₁, x₂) = x₁x₂</span>
+    <span class="ta-subject">subject to <strong>x₁² + 2x₂² ≤ 3, 2x₁² + x₂² ≤ 3</strong></span>
   </div>
   <div class="ta-problem" id="ta-problem-96" hidden>
     <span class="ta-direction">MINIMIZE</span>
@@ -30,14 +36,20 @@
       <svg id="ta-plot" viewBox="0 0 620 590" role="img" aria-labelledby="ta-plot-title ta-plot-description">
         <title id="ta-plot-title">Exercise 9.4: objective level sets and the unit circle</title>
         <desc id="ta-plot-description">Adjust the sliders to explore the level sets.</desc>
-        <defs><clipPath id="ta-clip"><rect x="56" y="22" width="530" height="530"/></clipPath></defs>
+        <defs>
+          <clipPath id="ta-clip"><rect x="56" y="22" width="530" height="530"/></clipPath>
+          <clipPath id="ta-constraint-clip"><ellipse id="ta-constraint-ellipse"/></clipPath>
+        </defs>
         <g clip-path="url(#ta-clip)">
           <path id="ta-feasible" class="ta-feasible"/>
+          <g id="ta-product-region" clip-path="url(#ta-constraint-clip)" hidden><ellipse id="ta-constraint-fill" class="ta-feasible"/></g>
           <g id="ta-grid" class="ta-grid"></g>
           <g id="ta-axes" class="ta-axes"></g>
           <g id="ta-ghosts" class="ta-ghosts"></g>
           <path id="ta-boundary-1" class="ta-boundary"/>
           <path id="ta-boundary-2" class="ta-boundary ta-diagonal"/>
+          <ellipse id="ta-product-boundary-1" class="ta-boundary" hidden/>
+          <ellipse id="ta-product-boundary-2" class="ta-boundary ta-diagonal" hidden/>
           <ellipse id="ta-circle" class="ta-boundary"/>
           <ellipse id="ta-ellipse" class="ta-level"/>
           <path id="ta-line" class="ta-level"/>
@@ -64,13 +76,19 @@
 
     <aside class="ta-sidebar" aria-label="Parameters and intuition">
       <section class="ta-controls" aria-label="Parameter controls">
-        <h2>Parameters</h2>
+        <h2 id="ta-controls-title">Parameters</h2>
         <div id="ta-ab-controls">
           <div class="ta-slider"><label for="ta-a">|a| <output id="ta-a-value" for="ta-a">1.00</output></label><input id="ta-a" type="range" min="0.5" max="3" step="0.05" value="1"></div>
           <div class="ta-slider"><label for="ta-b">|b| <output id="ta-b-value" for="ta-b">2.00</output></label><input id="ta-b" type="range" min="0.5" max="3" step="0.05" value="2"></div>
           <p class="ta-micro">Only a² and b² matter; a, b ≠ 0.</p>
           <div class="ta-presets" aria-label="Exercise 9.4 examples">
             <button type="button" data-preset="x">a² &lt; b²</button><button type="button" data-preset="equal">a² = b²</button><button type="button" data-preset="y">a² &gt; b²</button>
+          </div>
+        </div>
+        <div id="ta-product-controls" hidden>
+          <p class="ta-micro">The two constraint ellipses are fixed. Move c to explore the hyperbolas x₁x₂ = c.</p>
+          <div class="ta-presets" aria-label="Exercise 9.5 examples">
+            <button type="button" data-preset="productZero">c = 0</button><button type="button" data-preset="productHalf">c = ½</button><button type="button" data-preset="productAbove">c &gt; 1</button>
           </div>
         </div>
         <div id="ta-p-controls" hidden>
