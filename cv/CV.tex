@@ -1,0 +1,130 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[margin=0.85in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{needspace}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.25em}
+\setlist[itemize]{leftmargin=1.2em, topsep=0.2em, itemsep=0.15em}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\vspace{0.2em}\titlerule]
+\titlespacing*{\section}{0pt}{0.9em}{0.5em}
+
+% \entry{Organisation}{Dates}{Title}{Body}
+\newcommand{\entry}[4]{%
+    \textbf{#1} \hfill #2\\
+    \textit{#3}\par
+    #4
+    \vspace{0.6em}
+}
+
+% \paper{Title}{Year}{Co-authors and links}{Summary}
+\newcommand{\paper}[4]{%
+    \textbf{#1} \hfill #2\\
+    #3\\
+    {\small #4}\par
+    \vspace{0.6em}
+}
+
+% \course{Course}{Institution}{Year}
+\newcommand{\course}[3]{%
+    #1, \textit{#2} \hfill #3\par
+}
+
+\newcommand{\site}{https://kacperkrasowski.github.io}
+
+\begin{document}
+
+{\LARGE\textbf{Kacper Krasowski}}\\[0.4em]
+Barcelona, Spain
+\textbar{} \href{mailto:kacper.krasowski@carloalberto.org}{kacper.krasowski@carloalberto.org}
+\textbar{} +48 530 732 802\\
+\href{\site/}{kacperkrasowski.github.io}
+
+\vspace{0.8em}
+PhD student in Economics at \textbf{Collegio Carlo Alberto \& Universitat Aut\`onoma de Barcelona}.\\
+\textbf{Research fields:} Microeconomic Theory, Industrial Organization, Economics of Digital Technologies and AI.
+
+\section*{Education}
+
+\entry{Collegio Carlo Alberto \& Universitat Aut\`onoma de Barcelona}{Sep 2024 -- Present}{PhD in Economics}{}
+
+\entry{Universitat Aut\`onoma de Barcelona}{Oct 2022 -- Jul 2024}{MRes in Economics, Erasmus Mundus Joint Master Degree}{}
+
+\entry{Warsaw School of Economics}{Oct 2019 -- Jul 2022}{B.A. in Economics, Quantitative Methods in Economics and Information Systems}{}
+
+\section*{Working Papers}
+
+\paper{GenAI and the Internet}{2026}{%
+\href{\site/research/genaiandinternet/genaiandinternet_writeup.pdf}{[Paper]}
+\href{\site/research/genaiandinternet/genaiandinternet_slides.pdf}{[Slides]}}{%
+An equilibrium model of users choosing between AI and the web and of content creators' entry decisions. GenAI's effect on content supply and consumed quality is non-monotonic in AI capability.}
+
+\paper{Social Media and Labor Market Outcomes: The Effect of Facebook on College Graduates' Earnings}{2025}{%
+with Luca Marcian\`o \quad
+\href{\site/research/social/social_writeup.pdf}{[Paper]}
+\href{\site/research/social/social_slides.pdf}{[Slides]}}{%
+Uses Facebook's staggered rollout across U.S. colleges to show that exposure during college lowered graduates' early-career earnings.}
+
+\paper{Impact of Censorship in Social Media}{2024}{%
+\href{\site/research/impact/impact_writeup.pdf}{[Paper]}
+\href{\site/research/impact/impact_slides.pdf}{[Slides]}}{%
+A Friedkin--Johnsen opinion-dynamics model of threshold censorship: stronger censorship raises polarization, lowers internal conflict, and its optimal level depends on homophily.}
+
+\section*{Research \& Editorial Experience}
+
+\entry{The Econometric Society}{Mar 2026 -- Present}{Replicator}{
+\begin{itemize}
+    \item Independently verify the reproducibility of submitted research by testing authors' data, code, and documentation.
+\end{itemize}
+}
+
+\entry{Review of Economic Studies}{Sep 2025 -- Present}{Social Media Manager}{
+\begin{itemize}
+    \item Manage the journal's social media accounts and support its digital communications.
+    \item Build and maintain the REStud Tour websites.
+\end{itemize}
+}
+
+\needspace{6\baselineskip}
+\section*{Industry Experience}
+
+\entry{Shopee Pte. Ltd.}{Mar 2022 -- Sep 2022}{Data Analyst}{
+\begin{itemize}
+    \item Built web scrapers in Python and analyzed the collected data in Excel.
+\end{itemize}
+}
+
+\section*{Teaching Experience}
+
+\textit{Instructor}\par
+\course{Statistics (MSc)}{Barcelona School of Economics}{2026}
+\course{Computational Statistics (MSc)}{Barcelona School of Economics}{2026}
+
+\vspace{0.5em}
+\textit{Teaching Assistant}\par
+\course{Contracts, Information and Incentives in Organizations (MRes)}{UAB}{2026}
+\course{Optimization (MRes)}{UAB}{2026}
+\course{Econometrics I (B.A.)}{University of Turin}{2025}
+
+\section*{Presentations}
+
+BSE PhD Jamboree, Barcelona \hfill 2026
+
+\section*{Awards \& Fellowships}
+
+Social Innovation Award, Social Hackathon \hfill 2024\par
+UAB IDEA PhD Track Fellowship, Barcelona School of Economics \hfill 2023\par
+Finalist, Polish Economic Knowledge Olympiad \hfill 2019
+
+\section*{Skills \& Languages}
+
+\textbf{Programming:} Python, R, Stata, MATLAB, SQL, C, Bash, \LaTeX\par
+\textbf{Languages:} Polish (native), English (proficient), Spanish (intermediate), Italian (intermediate)
+
+\end{document}

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta name="google-site-verification" content="sasWNli4MuTfLs2RlfEJ2iS6aHy3wAu4LqgvmLT255Y" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Level Sets &amp; Constrained Optima | Kacper Krasowski</title>
+<meta name="keywords" content="">
+<meta name="description" content="Interactive intuition for Optimization TA 9, exercises 9.4, 9.5 and 9.6.">
+<meta name="author" content="Kacper Krasowski">
+<link rel="canonical" href="https://kacperkrasowski.github.io/teaching/ta9/">
+<link crossorigin="anonymous" href="https://kacperkrasowski.github.io/assets/css/stylesheet.min.b8c081bdcab177efdbc34fbb786717466ab5a619d03bd285425007c62d4de463.css" integrity="sha256-uMCBvcqxd&#43;/bw0&#43;7eGcXRmq1phnQO9KFQlAHxi1N5GM=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="https://kacperkrasowski.github.io/assets/js/highlight.min.30d2332871da51f600f574811c17751e6c862577d450b624f86e2bc8a6e31221.js" integrity="sha256-MNIzKHHaUfYA9XSBHBd1HmyGJXfUULYk&#43;G4ryKbjEiE="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://kacperkrasowski.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://kacperkrasowski.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://kacperkrasowski.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://kacperkrasowski.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://kacperkrasowski.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://kacperkrasowski.github.io/teaching/ta9/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Level Sets &amp; Constrained Optima" />
+<meta property="og:description" content="Interactive intuition for Optimization TA 9, exercises 9.4, 9.5 and 9.6." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kacperkrasowski.github.io/teaching/ta9/" /><meta property="article:section" content="teaching" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Level Sets &amp; Constrained Optima"/>
+<meta name="twitter:description" content="Interactive intuition for Optimization TA 9, exercises 9.4, 9.5 and 9.6."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "",
+      "item": "https://kacperkrasowski.github.io/teaching/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Level Sets \u0026 Constrained Optima",
+      "item": "https://kacperkrasowski.github.io/teaching/ta9/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Level Sets \u0026 Constrained Optima",
+  "name": "Level Sets \u0026 Constrained Optima",
+  "description": "Interactive intuition for Optimization TA 9, exercises 9.4, 9.5 and 9.6.",
+  "keywords": [
+    
+  ],
+  "articleBody": "",
+  "wordCount" : "0",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Kacper Krasowski"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://kacperkrasowski.github.io/teaching/ta9/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Kacper Krasowski",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kacperkrasowski.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header sticky-header">
+    <meta name="google-site-verification" content="sasWNli4MuTfLs2RlfEJ2iS6aHy3wAu4LqgvmLT255Y" />
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://kacperkrasowski.github.io/" accesskey="h" title="Kacper Krasowski (Alt + H)">Kacper Krasowski</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://kacperkrasowski.github.io/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://kacperkrasowski.github.io/research" title="Research">
+                    <span>Research</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://kacperkrasowski.github.io/teaching" title="Teaching">
+                    <span>Teaching</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<link rel="stylesheet" href="https://kacperkrasowski.github.io/css/ta9.min.8eeadfd5c9ca6e4d6d28f8b2f8b949f4479d6e257c742f2fb099981c2cefed0c.css" integrity="sha256-jurf1cnKbk1tKPiy&#43;LlJ9EedbiV8dC8vsJmYHCzv7Qw=">
+<article class="post-single ta9" id="ta9">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://kacperkrasowski.github.io/teaching/">← Teaching</a><span> / Optimization · TA 9</span></div>
+    <h1 class="post-title">Level Sets &amp; Constrained Optima</h1>
+    <p class="ta-intro">Change the parameters. Move the level. Find the last point of contact.</p>
+  </header>
+
+  <nav class="ta-tabs" aria-label="Exercise">
+    <a href="#exercise-9-4" id="ta-tab-94" aria-current="page">9.4 <span>Ellipses &amp; a circle</span></a>
+    <a href="#exercise-9-5" id="ta-tab-95">9.5 <span>Two ellipses</span></a>
+    <a href="#exercise-9-6" id="ta-tab-96">9.6 <span>Cost &amp; constraints</span></a>
+  </nav>
+
+  <div class="ta-problem" id="ta-problem-94">
+    <span class="ta-direction">MAXIMIZE</span>
+    <span class="ta-formula">f(x, y) = x²/a² + y²/b²</span>
+    <span class="ta-subject">subject to <strong>x² + y² = 1</strong></span>
+  </div>
+  <div class="ta-problem" id="ta-problem-95" hidden>
+    <span class="ta-direction">MAXIMIZE</span>
+    <span class="ta-formula">f(x₁, x₂) = x₁x₂</span>
+    <span class="ta-subject">subject to <strong>x₁² + 2x₂² ≤ 3, 2x₁² + x₂² ≤ 3</strong></span>
+  </div>
+  <div class="ta-problem" id="ta-problem-96" hidden>
+    <span class="ta-direction">MINIMIZE</span>
+    <span class="ta-formula">f(x₁, x₂) = x₁ + px₂</span>
+    <span class="ta-subject">subject to <strong>x₁x₂ ≥ 1, x₁ ≥ x₂ &gt; 0</strong></span>
+  </div>
+
+  <div class="ta-workspace">
+    <figure class="ta-figure">
+      <div class="ta-plot-heading"><span id="ta-plot-heading">Level curves on the unit circle</span><span class="ta-level-tag" id="ta-level-tag">f = 0.50</span></div>
+      <svg id="ta-plot" viewBox="0 0 620 590" role="img" aria-labelledby="ta-plot-title ta-plot-description">
+        <title id="ta-plot-title">Exercise 9.4: objective level sets and the unit circle</title>
+        <desc id="ta-plot-description">Adjust the sliders to explore the level sets.</desc>
+        <defs>
+          <clipPath id="ta-clip"><rect x="56" y="22" width="530" height="530"/></clipPath>
+          <clipPath id="ta-constraint-clip"><ellipse id="ta-constraint-ellipse"/></clipPath>
+        </defs>
+        <g clip-path="url(#ta-clip)">
+          <path id="ta-feasible" class="ta-feasible"/>
+          <g id="ta-product-region" clip-path="url(#ta-constraint-clip)" hidden><ellipse id="ta-constraint-fill" class="ta-feasible"/></g>
+          <g id="ta-grid" class="ta-grid"></g>
+          <g id="ta-axes" class="ta-axes"></g>
+          <g id="ta-ghosts" class="ta-ghosts"></g>
+          <path id="ta-boundary-1" class="ta-boundary"/>
+          <path id="ta-boundary-2" class="ta-boundary ta-diagonal"/>
+          <ellipse id="ta-product-boundary-1" class="ta-boundary" hidden/>
+          <ellipse id="ta-product-boundary-2" class="ta-boundary ta-diagonal" hidden/>
+          <ellipse id="ta-circle" class="ta-boundary"/>
+          <ellipse id="ta-ellipse" class="ta-level"/>
+          <path id="ta-line" class="ta-level"/>
+          <circle id="ta-zero-level" class="ta-zero-level" r="3" hidden/>
+          <path id="ta-feasible-level" class="ta-feasible-level"/>
+          <g id="ta-intersections" class="ta-intersections"></g>
+          <g id="ta-optimizers" class="ta-optimizers"></g>
+        </g>
+        <g id="ta-ticks" class="ta-ticks"></g>
+        <text id="ta-x-label" x="601" y="575" text-anchor="end" class="ta-axis-label">x</text>
+        <text id="ta-y-label" x="40" y="18" text-anchor="end" class="ta-axis-label">y</text>
+      </svg>
+      <figcaption>
+        <span><i class="ta-key ta-key-feasible"></i><span id="ta-feasible-key">Feasible circle</span></span>
+        <span><i class="ta-key ta-key-level"></i>Selected level</span>
+        <span><i class="ta-key ta-key-point"></i>Optimizer</span>
+      </figcaption>
+      <div class="ta-view-options">
+        <label><input type="checkbox" id="ta-context" checked> Nearby levels</label>
+        <label><input type="checkbox" id="ta-show-solution" checked> Optimizer</label>
+        <span id="ta-view-note">Equal scale on both axes</span>
+      </div>
+    </figure>
+
+    <aside class="ta-sidebar" aria-label="Parameters and intuition">
+      <section class="ta-controls" aria-label="Parameter controls">
+        <h2 id="ta-controls-title">Parameters</h2>
+        <div id="ta-ab-controls">
+          <div class="ta-slider"><label for="ta-a">|a| <output id="ta-a-value" for="ta-a">1.00</output></label><input id="ta-a" type="range" min="0.5" max="3" step="0.05" value="1"></div>
+          <div class="ta-slider"><label for="ta-b">|b| <output id="ta-b-value" for="ta-b">2.00</output></label><input id="ta-b" type="range" min="0.5" max="3" step="0.05" value="2"></div>
+          <p class="ta-micro">Only a² and b² matter; a, b ≠ 0.</p>
+          <div class="ta-presets" aria-label="Exercise 9.4 examples">
+            <button type="button" data-preset="x">a² &lt; b²</button><button type="button" data-preset="equal">a² = b²</button><button type="button" data-preset="y">a² &gt; b²</button>
+          </div>
+        </div>
+        <div id="ta-product-controls" hidden>
+          <p class="ta-micro">The two constraint ellipses are fixed. Move c to explore the hyperbolas x₁x₂ = c.</p>
+          <div class="ta-presets" aria-label="Exercise 9.5 examples">
+            <button type="button" data-preset="productZero">c = 0</button><button type="button" data-preset="productHalf">c = ½</button><button type="button" data-preset="productAbove">c &gt; 1</button>
+          </div>
+        </div>
+        <div id="ta-p-controls" hidden>
+          <div class="ta-slider"><label for="ta-p">p <output id="ta-p-value" for="ta-p">4.00</output></label><input id="ta-p" type="range" min="0.1" max="8" step="0.05" value="4"></div>
+          <div class="ta-presets" aria-label="Exercise 9.6 examples">
+            <button type="button" data-preset="small">p = ½</button><button type="button" data-preset="threshold">p = 1</button><button type="button" data-preset="large">p = 4</button>
+          </div>
+        </div>
+        <div class="ta-level-control">
+          <div class="ta-slider"><label for="ta-c">Level c <output id="ta-c-value" for="ta-c">0.50</output></label><input id="ta-c" type="range" min="0" max="1.3" step="0.001" value="0.5"></div>
+          <div class="ta-actions"><button type="button" id="ta-optimal" aria-pressed="false" title="Set c to the optimum and follow it as parameters change">Optimal level</button><button type="button" id="ta-reset">Reset</button></div>
+        </div>
+      </section>
+
+      <section class="ta-insight" aria-label="Geometric intuition">
+        <div class="ta-eyebrow" id="ta-regime">a² &lt; b²</div>
+        <h2 id="ta-insight-title">The horizontal endpoints win.</h2>
+        <p id="ta-insight-text">Raise c until the ellipse last touches the circle, at (±1, 0).</p>
+        <dl class="ta-values">
+          <div><dt id="ta-value-label">Maximum</dt><dd id="ta-value"></dd></div>
+          <div><dt>Optimizer</dt><dd id="ta-solution"></dd></div>
+          <div id="ta-derivative-row" hidden><dt>v′(p) = x₂*</dt><dd id="ta-derivative"></dd></div>
+        </dl>
+        <p class="ta-status" id="ta-status" role="status" aria-live="polite"></p>
+      </section>
+      <div class="ta-value-function" id="ta-value-function" hidden>
+        <div class="ta-eyebrow">Value function</div>
+        <svg id="ta-value-plot" viewBox="0 0 280 112" role="img" aria-labelledby="ta-value-title">
+          <title id="ta-value-title">v(p) equals 1+p up to p=1, then 2 square root of p. Its slope is x₂ star.</title>
+          <path id="ta-value-axes" class="ta-axes"/><path id="ta-value-threshold" class="ta-ghosts"/>
+          <path id="ta-value-curve" class="ta-value-curve"/><path id="ta-value-tangent" class="ta-value-tangent"/>
+          <circle id="ta-value-dot" r="4" class="ta-value-dot"/>
+          <text x="8" y="13" class="ta-mini-label">v(p)</text><text x="265" y="106" class="ta-mini-label">p</text><text x="53" y="106" class="ta-mini-label">1</text>
+        </svg>
+        <p class="ta-micro">v(p) = 1 + p for p ≤ 1; 2√p for p ≥ 1.</p>
+      </div>
+    </aside>
+  </div>
+  <noscript><p>Enable JavaScript to adjust the parameters and see the plots.</p></noscript>
+</article>
+
+<script src="https://kacperkrasowski.github.io/js/ta9.min.5ce5331ed325c44f6c9a1b6617fbd6b38958d9a90aaf9c65bdfb66a2f49f5ba0.js" integrity="sha256-XOUzHtMlxE9smhtmF/vWs4lY2akKr5xlvftmovSfW6A=" defer></script>
+
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2026 <a href="https://kacperkrasowski.github.io/">Kacper Krasowski</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
